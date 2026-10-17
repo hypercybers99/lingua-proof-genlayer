@@ -1,0 +1,298 @@
+{
+  "network": "GenLayer Studionet (Preview)",
+  "chainId": 61999,
+  "contractAddress": "0xC3335F8200571ddFee27dF35590681d86f5F1df4",
+  "deployTxHash": "0xb14dc8e3c83bdaaeb317dc8539cd2195b0a83c71e8cdf3ace5c14d5f375cf4d0",
+  "deployLatency": "6.21",
+  "codeSha256": "1ca57ae01b57652ff13210855f991ce96d23b5a1338bb0fdda90efd7b289109c",
+  "sender": "0xa2093f684311a55603368FbF726F9aB8b004C3e0",
+  "probes": {
+    "p1_utf8": {
+      "exactMatch": true,
+      "shaMatch": true,
+      "lenMatch": true,
+      "localCharLen": 334,
+      "localByteLen": 411,
+      "localSha256": "ec16fa6c886a2a4e1afcda37dbff2158191c7fe14507de2d6257b5ae5b7e32c8",
+      "onChainMeta": {
+        "byte_len": 411,
+        "char_len": 334,
+        "sha256": "ec16fa6c886a2a4e1afcda37dbff2158191c7fe14507de2d6257b5ae5b7e32c8"
+      },
+      "readBackSha256": "ec16fa6c886a2a4e1afcda37dbff2158191c7fe14507de2d6257b5ae5b7e32c8",
+      "passed": true
+    },
+    "p2_runtime": {
+      "decimal_calc": "1000.00",
+      "hashlib_sha256": "c73cf24e794b9194b4b3ce7c272eca9d007bcfb3701e5660c34f7e19090a3aca",
+      "json_roundtrip": true,
+      "re_finditer_count": 3,
+      "re_lookbehind": "bar",
+      "unicodedata_nfc_len": 17,
+      "unicodedata_nfkc_len": 17,
+      "unicodedata_nfkd_len": 21
+    },
+    "p3_batch": [
+      {
+        "run": 1,
+        "txHash": "0x2a589b2f09eb0d780352e66586a994ff88aa74c0ad32643761837cb1ac55cea4",
+        "latencySec": "15.15",
+        "isValidJson": true,
+        "hasBackKey": true,
+        "itemCount": 12,
+        "leaderResult": "SUCCESS",
+        "outputSnippet": "{\"back\": [\"This contract is effective from the date of signing.\", \"All payments must be in USD.\", \"Party A commits to keep Party B's information confi"
+      },
+      {
+        "run": 2,
+        "txHash": "0xb3607fde6e44950a1c0705bb2896c942949d19e892f7d5d2e83a222220ad136a",
+        "latencySec": "11.80",
+        "isValidJson": true,
+        "hasBackKey": true,
+        "itemCount": 12,
+        "leaderResult": "SUCCESS",
+        "outputSnippet": "{\"back\": [\"This contract takes effect from the date of signing.\", \"All payments must be in USD.\", \"Party A commits to keeping Party B's information co"
+      },
+      {
+        "run": 3,
+        "txHash": "0xe871b6f0dfdfd111d5f8dd1aad734c068520639174e162c6638f11ac14ababad",
+        "latencySec": "11.85",
+        "isValidJson": true,
+        "hasBackKey": true,
+        "itemCount": 12,
+        "leaderResult": "SUCCESS",
+        "outputSnippet": "{\"back\": [\"This contract takes effect from the signing date.\", \"All payments must be in USD.\", \"Party A commits to keeping Party B's information confi"
+      },
+      {
+        "run": 4,
+        "txHash": "0x3526a7c662d4819c24c34cface06ae4d7d8306fd2d832aaa33e26f4ba61de85f",
+        "latencySec": "18.53",
+        "isValidJson": true,
+        "hasBackKey": true,
+        "itemCount": 12,
+        "leaderResult": "SUCCESS",
+        "outputSnippet": "{\"back\": [\"This contract takes effect from the date of signing.\", \"All payments must be in USD.\", \"Party A commits to keeping Party B's information co"
+      },
+      {
+        "run": 5,
+        "txHash": "0x89839c907db692941153ef1969ef1f26ed96ce8c26f4d6a791bd5afd0d2d76dd",
+        "latencySec": "8.64",
+        "isValidJson": true,
+        "hasBackKey": true,
+        "itemCount": 12,
+        "leaderResult": "SUCCESS",
+        "outputSnippet": "{\"back\": [\"This contract is effective from the date of signing.\", \"All payments must be in USD.\", \"Party A commits to keeping Party B's information co"
+      }
+    ],
+    "p4_calldata": [
+      {
+        "size": 2048,
+        "txHash": "0xba6ebc277e1fd8fe7779e66bd36eb6041b81ca8aa9049d0650843057de3ac33b",
+        "latencySec": "9.01",
+        "status": "ACCEPTED",
+        "verified": true
+      },
+      {
+        "size": 4096,
+        "txHash": "0x781ef3221d1da7cf9f6b7bf404d88f40808ef55ebba6b0f2c68ec0cf6b3056b2",
+        "latencySec": "5.42",
+        "status": "ACCEPTED",
+        "verified": true
+      },
+      {
+        "size": 8192,
+        "txHash": "0x47e69adb66c8a540edfeea146420fac83b451ae8acadf850bf505d76dad9aed2",
+        "latencySec": "8.59",
+        "status": "ACCEPTED",
+        "verified": true
+      }
+    ],
+    "p5_sequential": {
+      "txHash": "0xdbd79749dbb985e2c3b03d9eb87daf28de161cb6bad6cad4aaf3bed41b7913c9",
+      "latencySec": "12.00",
+      "status": "ACCEPTED",
+      "readBack": {
+        "res_a": {
+          "translation": "We agree with these terms."
+        },
+        "res_b": {
+          "back_translation": "We agree to these terms.",
+          "label": "PRESERVED",
+          "notes": {
+            "cultural_context": "No cultural nuances or idiomatic expressions are lost in translation.",
+            "grammatical_structure": "The original Vietnamese sentence is a direct statement of agreement, mirrored accurately in the English translation.",
+            "semantic_equivalence": "The meaning is fully preserved in the back translation."
+          },
+          "original": "Chung toi dong y voi cac dieu khoan nay."
+        }
+      }
+    }
+  },
+  "transactions": [
+    {
+      "action": "p1_utf8_write",
+      "txHash": "0x1dcf49feb1ea32f03e5d95125e3b4bcf467839ec912193543c9138d531aa3b59",
+      "latency_seconds": "8.54",
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_result": "SUCCESS",
+      "votes": {
+        "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "agree",
+        "0x2FcBC452425f2F1e102c5c04b4331fcB46ee1c00": "agree",
+        "0x40533175AfBbAee2c030F88259Afb5aEDbCF0E05": "idle",
+        "0x892C437da9b9CA0b6017B6f046F58E3526B46ec6": "agree",
+        "0xad7d13f269CeAd4379E64a1A3a0803a827e70B43": "idle"
+      }
+    },
+    {
+      "action": "p2_runtime_write",
+      "txHash": "0x245dc45ca569ac68ded97f48aecd258a812b36fcf3a0c02b79cda76af6434d6f",
+      "latency_seconds": "8.56",
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_result": "SUCCESS",
+      "votes": {
+        "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "agree",
+        "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "agree",
+        "0x6a4179A851B3747A458baD2f089AB2EeFE0eBbAb": "agree",
+        "0x8Ce1805d6970d54748dE7160b5b395dCC5c71F44": "agree",
+        "0x9244De5F20cB75A0c51d79A9A3208D00a99aFc10": "agree"
+      }
+    },
+    {
+      "action": "p3_batch_run_1",
+      "txHash": "0x2a589b2f09eb0d780352e66586a994ff88aa74c0ad32643761837cb1ac55cea4",
+      "latency_seconds": "15.15",
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_result": "SUCCESS",
+      "votes": {
+        "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "agree",
+        "0x40533175AfBbAee2c030F88259Afb5aEDbCF0E05": "agree",
+        "0x5Bbbd7cdD63c0ba7f088038Cb049bDDAbE4F6fd1": "agree",
+        "0x7bf4Ea55363bbe73A4dd5b3900bf03c978A63b6e": "idle",
+        "0xf1C7551292319EE334e2D8A24eAC108Bd4C63b21": "idle"
+      }
+    },
+    {
+      "action": "p3_batch_run_2",
+      "txHash": "0xb3607fde6e44950a1c0705bb2896c942949d19e892f7d5d2e83a222220ad136a",
+      "latency_seconds": "11.80",
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_result": "SUCCESS",
+      "votes": {
+        "0x6a4179A851B3747A458baD2f089AB2EeFE0eBbAb": "idle",
+        "0x8Ce1805d6970d54748dE7160b5b395dCC5c71F44": "agree",
+        "0x8a876C3F3a4783Bd123982bcBF3c672dc0239004": "idle",
+        "0xA712cB25a4002666FA9D09477251f238dD9e06b3": "agree",
+        "0xb0925568bFbCF00aADBcA053E6D0E1628ff3d530": "agree"
+      }
+    },
+    {
+      "action": "p3_batch_run_3",
+      "txHash": "0xe871b6f0dfdfd111d5f8dd1aad734c068520639174e162c6638f11ac14ababad",
+      "latency_seconds": "11.85",
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_result": "SUCCESS",
+      "votes": {
+        "0x40533175AfBbAee2c030F88259Afb5aEDbCF0E05": "idle",
+        "0x5Bbbd7cdD63c0ba7f088038Cb049bDDAbE4F6fd1": "agree",
+        "0x6a4179A851B3747A458baD2f089AB2EeFE0eBbAb": "agree",
+        "0x7bf4Ea55363bbe73A4dd5b3900bf03c978A63b6e": "idle",
+        "0x9244De5F20cB75A0c51d79A9A3208D00a99aFc10": "agree"
+      }
+    },
+    {
+      "action": "p3_batch_run_4",
+      "txHash": "0x3526a7c662d4819c24c34cface06ae4d7d8306fd2d832aaa33e26f4ba61de85f",
+      "latency_seconds": "18.53",
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_result": "SUCCESS",
+      "votes": {
+        "0x40533175AfBbAee2c030F88259Afb5aEDbCF0E05": "idle",
+        "0x8a876C3F3a4783Bd123982bcBF3c672dc0239004": "agree",
+        "0xA712cB25a4002666FA9D09477251f238dD9e06b3": "agree",
+        "0xe7eEe8a1c1690b0322d795B80A76ab2Cd1a0eAFd": "idle",
+        "0xf1C7551292319EE334e2D8A24eAC108Bd4C63b21": "agree"
+      }
+    },
+    {
+      "action": "p3_batch_run_5",
+      "txHash": "0x89839c907db692941153ef1969ef1f26ed96ce8c26f4d6a791bd5afd0d2d76dd",
+      "latency_seconds": "8.64",
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_result": "SUCCESS",
+      "votes": {
+        "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "idle",
+        "0x40533175AfBbAee2c030F88259Afb5aEDbCF0E05": "agree",
+        "0x8a876C3F3a4783Bd123982bcBF3c672dc0239004": "agree",
+        "0xb0925568bFbCF00aADBcA053E6D0E1628ff3d530": "idle",
+        "0xf29b6947ed298d139FC2655DB15D868C9AbB3091": "agree"
+      }
+    },
+    {
+      "action": "p4_calldata_2048",
+      "txHash": "0xba6ebc277e1fd8fe7779e66bd36eb6041b81ca8aa9049d0650843057de3ac33b",
+      "latency_seconds": "9.01",
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_result": "SUCCESS",
+      "votes": {
+        "0x1242E9f5bf9b253327f130E8802b7b2F438A21Ef": "idle",
+        "0x5Bbbd7cdD63c0ba7f088038Cb049bDDAbE4F6fd1": "agree",
+        "0x6a4179A851B3747A458baD2f089AB2EeFE0eBbAb": "agree",
+        "0x8Ce1805d6970d54748dE7160b5b395dCC5c71F44": "agree",
+        "0x8a876C3F3a4783Bd123982bcBF3c672dc0239004": "idle"
+      }
+    },
+    {
+      "action": "p4_calldata_4096",
+      "txHash": "0x781ef3221d1da7cf9f6b7bf404d88f40808ef55ebba6b0f2c68ec0cf6b3056b2",
+      "latency_seconds": "5.42",
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_result": "SUCCESS",
+      "votes": {
+        "0x40533175AfBbAee2c030F88259Afb5aEDbCF0E05": "agree",
+        "0x8Ce1805d6970d54748dE7160b5b395dCC5c71F44": "agree",
+        "0x8a876C3F3a4783Bd123982bcBF3c672dc0239004": "agree",
+        "0x9244De5F20cB75A0c51d79A9A3208D00a99aFc10": "agree",
+        "0xa21bc502E3578E4b3039be8c59a257198f7c3f19": "agree"
+      }
+    },
+    {
+      "action": "p4_calldata_8192",
+      "txHash": "0x47e69adb66c8a540edfeea146420fac83b451ae8acadf850bf505d76dad9aed2",
+      "latency_seconds": "8.59",
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_result": "SUCCESS",
+      "votes": {
+        "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "agree",
+        "0x2FcBC452425f2F1e102c5c04b4331fcB46ee1c00": "agree",
+        "0x6a4179A851B3747A458baD2f089AB2EeFE0eBbAb": "idle",
+        "0x8Ce1805d6970d54748dE7160b5b395dCC5c71F44": "agree",
+        "0xf1C7551292319EE334e2D8A24eAC108Bd4C63b21": "idle"
+      }
+    },
+    {
+      "action": "p5_sequential_exec",
+      "txHash": "0xdbd79749dbb985e2c3b03d9eb87daf28de161cb6bad6cad4aaf3bed41b7913c9",
+      "latency_seconds": "12.00",
+      "status_name": "ACCEPTED",
+      "result_name": "MAJORITY_AGREE",
+      "leader_result": "SUCCESS",
+      "votes": {
+        "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "idle",
+        "0x40533175AfBbAee2c030F88259Afb5aEDbCF0E05": "agree",
+        "0x892C437da9b9CA0b6017B6f046F58E3526B46ec6": "agree",
+        "0x8Ce1805d6970d54748dE7160b5b395dCC5c71F44": "agree",
+        "0x8a876C3F3a4783Bd123982bcBF3c672dc0239004": "idle"
+      }
+    }
+  ]
+}

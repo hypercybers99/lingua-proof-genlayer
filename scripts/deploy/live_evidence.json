@@ -1,0 +1,469 @@
+{
+  "network": "GenLayer Studionet (Preview)",
+  "chainId": 61999,
+  "contractAddress": "0xba67d808f2b7E533ec06655eB730Ef5B27623EBF",
+  "deployTxHash": "0x948a4f5ade97dff6a9a26f4fdc1a011e3873835566829711fb66f5ee5ce2cca4",
+  "generatedAt": "2026-10-17T16:26:09.398Z",
+  "accounts": {
+    "translator": "0xd96066ce21c33c3df1b3d8abe035b866aa642f23",
+    "challenger": "0x3b052258513e8f7b9d99833fe5c6dd01b526ecb2"
+  },
+  "cases": {
+    "E1": {
+      "id": "E1",
+      "title": "Faithful Aligned Translation (en → vi)",
+      "description": "Governance charter with numbers, ISO dates, URL, tickers, hex address, quoted terms.",
+      "langs": "en → vi",
+      "translationId": "41df8b952d1c",
+      "registerTx": "0x1903bfd28550c785e05961db83cb397de4e51451185038e651d7e55cbe07b80f",
+      "auditTx": "0x2c455424e9c81d5ba123c61cd562016d8f6cb1c79c29f880dfefc553d310fb0c",
+      "actionTx": "0x2c455424e9c81d5ba123c61cd562016d8f6cb1c79c29f880dfefc553d310fb0c",
+      "agreement": "3/5",
+      "outcomeClass": "MINOR_SHIFT",
+      "score": 57
+    },
+    "E2": {
+      "id": "E2",
+      "title": "Faithful Aligned Translation (vi → en)",
+      "description": "Reserve asset notice with Vietnamese diacritics, currencies, dates, and addresses.",
+      "langs": "vi → en",
+      "translationId": "c98e4b4c49b6",
+      "registerTx": "0x9c8e1bd324db8c4c0d71a97d2706e650d11ab2d93d32c0e0bd98de4ee6df1619",
+      "auditTx": "0x4636675d9d8185865e61d7c49237500b84494e9ad43abec396f8e22310eafedc",
+      "actionTx": "0x4636675d9d8185865e61d7c49237500b84494e9ad43abec396f8e22310eafedc",
+      "agreement": "3/5",
+      "outcomeClass": "FAITHFUL",
+      "score": 100
+    },
+    "E3": {
+      "id": "E3",
+      "title": "Altered Numeric Amount (Deterministic Anchor Catch)",
+      "description": "Changed 50,000 USD to 5,000 USD; caught deterministically by code as ANCHOR_ALTERED.",
+      "langs": "en → vi",
+      "translationId": "28ada306666c",
+      "registerTx": "0x5b594ff6787c14a779c54213d9bebab14cfcfc8eb3d4ec84d631f612528c794a",
+      "auditTx": "0x45b8ad7e2d93c48f8a9d9aa5315fb8af7a0567227eeef772fcbeb819b5e12e6c",
+      "actionTx": "0x45b8ad7e2d93c48f8a9d9aa5315fb8af7a0567227eeef772fcbeb819b5e12e6c",
+      "agreement": "3/5",
+      "outcomeClass": "MATERIAL_LOSS",
+      "score": 50
+    },
+    "E4": {
+      "id": "E4",
+      "title": "Flipped Negation / Permission Reversal (Model Catch)",
+      "description": "Translated \"must not execute\" to \"can execute\"; detected as DISTORTED with verified quotes.",
+      "langs": "en → vi",
+      "translationId": "eb74210fc693",
+      "registerTx": "0x6427ab6f874452a192849095738f7dca799fd49fb73557e2b98455e8fd914bef",
+      "auditTx": "0x7649c600187579a655b59372c5f3c254edfd000bcd2d06e3b90b4e69010fd13c",
+      "actionTx": "0x7649c600187579a655b59372c5f3c254edfd000bcd2d06e3b90b4e69010fd13c",
+      "agreement": "3/5",
+      "outcomeClass": "MATERIAL_LOSS",
+      "score": 50
+    },
+    "E5": {
+      "id": "E5",
+      "title": "Dropped Security Clause (Model Catch)",
+      "description": "Completely omitted the slashing consequence clause; detected as OMITTED.",
+      "langs": "en → vi",
+      "translationId": "76f8be443332",
+      "registerTx": "0xce82a0c4012dda1ab357454c46e45f10d2863fff83b1ab12231bd3efd516aefb",
+      "auditTx": "0x8a484174f4171aaca84c4928d81c6a43db477fce2ce91c7adcb3a84595e3fee3",
+      "actionTx": "0x8a484174f4171aaca84c4928d81c6a43db477fce2ce91c7adcb3a84595e3fee3",
+      "agreement": "3/5",
+      "outcomeClass": "CONTENT_DRIFT",
+      "score": 50
+    },
+    "E6": {
+      "id": "E6",
+      "title": "Tone Shift in Formal Notice (Model Catch)",
+      "description": "Converted formal governance notice into casual slang; detected as SHIFTED.",
+      "langs": "en → vi",
+      "translationId": "a06013894ab6",
+      "registerTx": "0x56f01a84294958381319a3e0df75f632f9b13d486ef5d46d16ca209d8f177d86",
+      "auditTx": "0x3053228853d673602829f4524c48328915fe50fd9c5b25892cdb991ef563a0cb",
+      "actionTx": "0x3053228853d673602829f4524c48328915fe50fd9c5b25892cdb991ef563a0cb",
+      "agreement": "3/5",
+      "outcomeClass": "MINOR_SHIFT",
+      "score": 50
+    },
+    "E7": {
+      "id": "E7",
+      "title": "Revision Lineage Flow (Repairing E3)",
+      "description": "Revised defective translation 28ada306666c with corrected amount; audited to FAITHFUL.",
+      "langs": "en → vi",
+      "translationId": "a06013894ab6",
+      "registerTx": "0x89c2ba009e3e52cab87df7d59002935cc70f20794d03475d0437057c2226fe3d",
+      "auditTx": "0xaa3afa6bee2253faa048e60bd0cd872aad9750f5dfcbd5252fe96b1511b74903",
+      "actionTx": "0xaa3afa6bee2253faa048e60bd0cd872aad9750f5dfcbd5252fe96b1511b74903",
+      "agreement": "5/5",
+      "outcomeClass": "MINOR_SHIFT",
+      "score": 50
+    },
+    "E8": {
+      "id": "E8",
+      "title": "Targeted Segment Challenges (E1 Faithful & E4 Distortion)",
+      "description": "Challenged faithful E1 (upheld original) and contested distorted E4 with corrected prohibition.",
+      "langs": "en → vi",
+      "translationId": "eb74210fc693",
+      "registerTx": "0x94d40fc3f84ae47cdef4f020afcac342cf8c1c7efd295ea6db0aa0c83623ce8e",
+      "actionTx": "0x95be45d77e1e25beb569c936e97b12aa4acc87fd6bb8f964ca1ddb5fe1e8f560",
+      "auditTx": "0x95be45d77e1e25beb569c936e97b12aa4acc87fd6bb8f964ca1ddb5fe1e8f560",
+      "agreement": "3/5",
+      "outcomeClass": "MATERIAL_LOSS",
+      "score": 50
+    }
+  },
+  "negativeTests": [
+    {
+      "name": "Unsupported Language",
+      "method": "register_translation",
+      "txHash": "0xa8813d1522198eb7dbe9de830d7cf6cc71589c9477109b47b818107f5293a371",
+      "status": "ACCEPTED",
+      "consensusResult": "MAJORITY_AGREE",
+      "decodedError": "unsupported language",
+      "agreement": "5/5",
+      "latencySec": "7.53"
+    },
+    {
+      "name": "Same Source and Target Language",
+      "method": "register_translation",
+      "txHash": "0xa630d53151fed760cd1e7cf487a342903239245e7c8b1f0d56687cfc9796fec6",
+      "status": "ACCEPTED",
+      "consensusResult": "MAJORITY_AGREE",
+      "decodedError": "source and target language must differ",
+      "agreement": "5/5",
+      "latencySec": "4.02"
+    },
+    {
+      "name": "Empty Pairs List",
+      "method": "register_translation",
+      "txHash": "0xbbea0a68c6868b9d2a4ce7cecc54a7f66545192ffcf95e64a1bdfaca592cad34",
+      "status": "ACCEPTED",
+      "consensusResult": "MAJORITY_AGREE",
+      "decodedError": "pairs must be a list of 1 to 12 objects",
+      "agreement": "5/5",
+      "latencySec": "3.66"
+    },
+    {
+      "name": "Exceeding 12 Max Pairs",
+      "method": "register_translation",
+      "txHash": "0x10d3d4ad44406df5071febc247c6ca151ca1137a1253a3ec2d33b1c2cdb1c645",
+      "status": "ACCEPTED",
+      "consensusResult": "MAJORITY_AGREE",
+      "decodedError": "pairs must be a list of 1 to 12 objects",
+      "agreement": "5/5",
+      "latencySec": "4.38"
+    },
+    {
+      "name": "Target Equals Source Without Anchor Exemption",
+      "method": "register_translation",
+      "txHash": "0xee5a4d29d9c598e378112b6c1da9765c568424949c46b14de9634a7ce36dad5a",
+      "status": "ACCEPTED",
+      "consensusResult": "MAJORITY_AGREE",
+      "decodedError": "target equals source",
+      "agreement": "4/5",
+      "latencySec": "7.57"
+    },
+    {
+      "name": "Overlength Source Segment (>400 Chars)",
+      "method": "register_translation",
+      "txHash": "0xabcc64e20e3a9f4ad0e3aac7e586d43c94aec3337157f7d4e9a66193455a23ec",
+      "status": "ACCEPTED",
+      "consensusResult": "MAJORITY_AGREE",
+      "decodedError": "source segment length out of range",
+      "agreement": "3/5",
+      "latencySec": "7.25"
+    },
+    {
+      "name": "Unallowed Control Character in Segment",
+      "method": "register_translation",
+      "txHash": "0xb9f6c6f2c6a12eaca1ad1f39b49e26892b5d0811c926e7a4d6fecc700e1cdc9c",
+      "status": "ACCEPTED",
+      "consensusResult": "MAJORITY_AGREE",
+      "decodedError": "segment contains control characters",
+      "agreement": "3/5",
+      "latencySec": "7.20"
+    },
+    {
+      "name": "Unknown Translation ID Audit",
+      "method": "audit_translation",
+      "txHash": "0xa99caa19f73479f1e1342fcbeca4eaeb939c98db687d08002ef4616fed2db789",
+      "status": "ACCEPTED",
+      "consensusResult": "MAJORITY_AGREE",
+      "decodedError": "translation not found",
+      "agreement": "5/5",
+      "latencySec": "4.40"
+    },
+    {
+      "name": "Audit Before Challenge",
+      "method": "challenge_segment",
+      "txHash": "0x0092d2f46685e7b224c9dd44b8afc9f9d51c49938458072df33b6a74aea7ff77",
+      "status": "ACCEPTED",
+      "consensusResult": "MAJORITY_AGREE",
+      "decodedError": "reverted",
+      "agreement": "4/5",
+      "latencySec": "3.85"
+    },
+    {
+      "name": "Translator Challenging Own Translation",
+      "method": "challenge_segment",
+      "txHash": "0x27cc649a27d9ef2590fb599a69444f60e271c13da0469a3dbb6801697b7c25d7",
+      "status": "ACCEPTED",
+      "consensusResult": "MAJORITY_AGREE",
+      "decodedError": "reverted",
+      "agreement": "3/5",
+      "latencySec": "8.03"
+    },
+    {
+      "name": "Non-Translator Calling Revision",
+      "method": "revise_translation",
+      "txHash": "0x552d84263b06f28022fedb27ea328f62420f65a16494b04f2d02b314f1dd68ec",
+      "status": "ACCEPTED",
+      "consensusResult": "MAJORITY_AGREE",
+      "decodedError": "reverted",
+      "agreement": "3/5",
+      "latencySec": "3.84"
+    },
+    {
+      "name": "Duplicate Translation Registration",
+      "method": "register_translation",
+      "txHash": "0x6b8e0af9ddc0451ac1042d4262b31f720b8eabc945ae125ca8bc80909676121a",
+      "status": "ACCEPTED",
+      "consensusResult": "MAJORITY_AGREE",
+      "decodedError": "duplicate registration",
+      "agreement": "5/5",
+      "latencySec": "7.58"
+    },
+    {
+      "name": "Revision Identical to Parent",
+      "method": "revise_translation",
+      "txHash": "0xc03c9abbc2f4dc872bf4724efc0df825e659f15d327ef0b3dc85cb070905367e",
+      "status": "ACCEPTED",
+      "consensusResult": "MAJORITY_AGREE",
+      "decodedError": "reverted",
+      "agreement": "3/5",
+      "latencySec": "7.22"
+    },
+    {
+      "name": "Audit Cooldown Active (<300s)",
+      "method": "audit_translation",
+      "txHash": "0x96208e0d51d52789bffe463b5d8441893b8e74c068b278abc7f85e5bd5f84d5a",
+      "status": "ACCEPTED",
+      "consensusResult": "MAJORITY_AGREE",
+      "decodedError": "audit cooldown active",
+      "agreement": "5/5",
+      "latencySec": "7.16"
+    }
+  ],
+  "readbacks": {
+    "translatorBoard": [
+      {
+        "audited_count": 6,
+        "first_registered_ts": 1792254363,
+        "mean_score": 59.5,
+        "translator": "0xd96066ce21c33c3df1b3d8abe035b866aa642f23"
+      }
+    ],
+    "lineageE7": [
+      {
+        "id": "a06013894ab6",
+        "latest_class": "MINOR_SHIFT",
+        "latest_score": 50,
+        "parent_id": "",
+        "registered_at": "2026-10-17T16:31:46Z",
+        "revision": 1,
+        "status": "AUDITED"
+      }
+    ],
+    "effectiveE1": {
+      "audits_total": 1,
+      "challenges_total": 0,
+      "children": [],
+      "effective_class": "MINOR_SHIFT",
+      "effective_score": 57,
+      "effective_segments": [
+        {
+          "anchor": "ANCHORS_OK",
+          "back_quote": "brings notarized translation fidelity service audited by consensus",
+          "effective_label": "SHIFTED",
+          "effective_severity": 1,
+          "has_superseding_challenge": false,
+          "i": 0,
+          "src_quote": "delivers consensus-audited translation fidelity notarization"
+        },
+        {
+          "anchor": "ANCHORS_OK",
+          "back_quote": "",
+          "effective_label": "PRESERVED",
+          "effective_severity": 0,
+          "has_superseding_challenge": false,
+          "i": 1,
+          "src_quote": ""
+        },
+        {
+          "anchor": "ANCHORS_OK",
+          "back_quote": "",
+          "effective_label": "PRESERVED",
+          "effective_severity": 0,
+          "has_superseding_challenge": false,
+          "i": 2,
+          "src_quote": ""
+        },
+        {
+          "anchor": "ANCHORS_OK",
+          "back_quote": "",
+          "effective_label": "PRESERVED",
+          "effective_severity": 0,
+          "has_superseding_challenge": false,
+          "i": 3,
+          "src_quote": ""
+        },
+        {
+          "anchor": "ANCHORS_OK",
+          "back_quote": "",
+          "effective_label": "PRESERVED",
+          "effective_severity": 0,
+          "has_superseding_challenge": false,
+          "i": 4,
+          "src_quote": ""
+        },
+        {
+          "anchor": "ANCHORS_OK",
+          "back_quote": "officially approved the proposal",
+          "effective_label": "SHIFTED",
+          "effective_severity": 1,
+          "has_superseding_challenge": false,
+          "i": 5,
+          "src_quote": "formally approved the motion"
+        },
+        {
+          "anchor": "ANCHORS_OK",
+          "back_quote": "strictly comply with these procedures",
+          "effective_label": "SHIFTED",
+          "effective_severity": 1,
+          "has_superseding_challenge": false,
+          "i": 6,
+          "src_quote": "follow these procedures diligently"
+        }
+      ],
+      "has_superseding_challenge": false,
+      "id": "41df8b952d1c",
+      "label": "E1 Faithful Governance Policy (en -> vi)",
+      "last_audit_ts": 1792254424,
+      "latest_audit_n": 1,
+      "latest_class": "MINOR_SHIFT",
+      "latest_score": 57,
+      "pairs": [
+        {
+          "anchor": "ANCHORS_OK",
+          "anchor_detail": [],
+          "src": "LinguaProof delivers consensus-audited translation fidelity notarization for decentralized governance.",
+          "tgt": "LinguaProof mang lại dịch vụ công chứng độ trung thực của bản dịch được kiểm định bằng đồng thuận cho quản trị phi tập trung."
+        },
+        {
+          "anchor": "ANCHORS_OK",
+          "anchor_detail": [],
+          "src": "The treasury allocated 50,000 USD to the ecosystem development fund.",
+          "tgt": "Kho bạc đã phân bổ 50,000 USD cho quỹ phát triển hệ sinh thái."
+        },
+        {
+          "anchor": "ANCHORS_OK",
+          "anchor_detail": [],
+          "src": "Voting concludes on 2026-12-31 at midnight.",
+          "tgt": "Cuộc bỏ phiếu kết thúc vào 2026-12-31 lúc nửa đêm."
+        },
+        {
+          "anchor": "ANCHORS_OK",
+          "anchor_detail": [],
+          "src": "Official documentation is available at https://docs.linguaproof.io for public review.",
+          "tgt": "Tài liệu chính thức có sẵn tại https://docs.linguaproof.io để công chúng xem xét."
+        },
+        {
+          "anchor": "ANCHORS_OK",
+          "anchor_detail": [],
+          "src": "Contract upgrades require approval from 0xba67d808f2b7e533ec06655eb730ef5b27623ebf before deployment.",
+          "tgt": "Việc nâng cấp hợp đồng yêu cầu sự chấp thuận từ 0xba67d808f2b7e533ec06655eb730ef5b27623ebf trước khi triển khai."
+        },
+        {
+          "anchor": "ANCHORS_OK",
+          "anchor_detail": [],
+          "src": "The committee formally approved the motion titled \"Q4 Security Audit\".",
+          "tgt": "Ủy ban đã chính thức phê duyệt kiến nghị có tiêu đề \"Q4 Security Audit\"."
+        },
+        {
+          "anchor": "ANCHORS_OK",
+          "anchor_detail": [],
+          "src": "All network participants must follow these procedures diligently.",
+          "tgt": "Tất cả những người tham gia mạng lưới phải tuân thủ nghiêm túc các quy trình này."
+        }
+      ],
+      "pairs_sha256": "8a8061730c2d2fa7f7d62c09f347561e569676c7d7057e7ca7eb02189d8d603a",
+      "parent_id": "",
+      "registered_at": "2026-10-17T16:26:56Z",
+      "registered_ts": 1792254416,
+      "revision": 1,
+      "source_lang": "en",
+      "status": "AUDITED",
+      "target_lang": "vi",
+      "translator": "0xd96066ce21c33c3df1b3d8abe035b866aa642f23"
+    },
+    "effectiveE4": {
+      "audits_total": 1,
+      "challenges_total": 0,
+      "children": [],
+      "effective_class": "MATERIAL_LOSS",
+      "effective_score": 50,
+      "effective_segments": [
+        {
+          "anchor": "ANCHORS_OK",
+          "back_quote": "can perform unauthorized transactions in all cases",
+          "effective_label": "DISTORTED",
+          "effective_severity": 4,
+          "has_superseding_challenge": false,
+          "i": 0,
+          "src_quote": "must not execute unauthorized transactions under any circumstances"
+        },
+        {
+          "anchor": "ANCHORS_OK",
+          "back_quote": "",
+          "effective_label": "PRESERVED",
+          "effective_severity": 0,
+          "has_superseding_challenge": false,
+          "i": 1,
+          "src_quote": ""
+        }
+      ],
+      "has_superseding_challenge": false,
+      "id": "eb74210fc693",
+      "label": "E4 Flipped Negation (en -> vi)",
+      "last_audit_ts": 1792254655,
+      "latest_audit_n": 1,
+      "latest_class": "MATERIAL_LOSS",
+      "latest_score": 50,
+      "pairs": [
+        {
+          "anchor": "ANCHORS_OK",
+          "anchor_detail": [],
+          "src": "Validators must not execute unauthorized transactions under any circumstances.",
+          "tgt": "Người xác thực có thể thực hiện các giao dịch trái phép trong mọi trường hợp."
+        },
+        {
+          "anchor": "ANCHORS_OK",
+          "anchor_detail": [],
+          "src": "The security committee reviews all contract changes prior to execution.",
+          "tgt": "Ủy ban an ninh xem xét tất cả các thay đổi hợp đồng trước khi thực thi."
+        }
+      ],
+      "pairs_sha256": "f0734b598becd1c58471136fc0e9cfba1835fcbec8e44e7ca06f9e6179b22800",
+      "parent_id": "",
+      "registered_at": "2026-10-17T16:30:46Z",
+      "registered_ts": 1792254646,
+      "revision": 1,
+      "source_lang": "en",
+      "status": "AUDITED",
+      "target_lang": "vi",
+      "translator": "0xd96066ce21c33c3df1b3d8abe035b866aa642f23"
+    }
+  }
+}

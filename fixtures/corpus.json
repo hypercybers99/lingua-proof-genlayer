@@ -1,0 +1,269 @@
+{
+  "description": "LinguaProof calibration corpus containing 24 aligned test items (8 faithful, 16 corrupted with controlled defects) across en->vi, vi->en, en->es, es->en.",
+  "items": [
+    {
+      "id": "F1",
+      "group": "FAITHFUL",
+      "src_lang": "en",
+      "tgt_lang": "vi",
+      "defect": "none",
+      "expected_label": "PRESERVED",
+      "expected_class": "FAITHFUL",
+      "src": "All payments under this contract must be made in USD.",
+      "tgt": "Tat ca cac khoan thanh toan theo hop dong nay phai duoc thuc hien bang USD."
+    },
+    {
+      "id": "F2",
+      "group": "FAITHFUL",
+      "src_lang": "en",
+      "tgt_lang": "vi",
+      "defect": "none",
+      "expected_label": "PRESERVED",
+      "expected_class": "FAITHFUL",
+      "src": "Notice of termination must be sent at least 30 days in advance.",
+      "tgt": "Thong bao cham dut phai duoc gui truoc it nhat 30 ngay."
+    },
+    {
+      "id": "F3",
+      "group": "FAITHFUL",
+      "src_lang": "vi",
+      "tgt_lang": "en",
+      "defect": "none",
+      "expected_label": "PRESERVED",
+      "expected_class": "FAITHFUL",
+      "src": "Ben B co quyen kiem tra tai lieu dinh ky hang quy.",
+      "tgt": "Party B has the right to periodically inspect documents quarterly."
+    },
+    {
+      "id": "F4",
+      "group": "FAITHFUL",
+      "src_lang": "vi",
+      "tgt_lang": "en",
+      "defect": "none",
+      "expected_label": "PRESERVED",
+      "expected_class": "FAITHFUL",
+      "src": "Hop dong nay duoc lap thanh hai ban co gia tri phap ly nhu nhau.",
+      "tgt": "This agreement is made in two copies of equal legal validity."
+    },
+    {
+      "id": "F5",
+      "group": "FAITHFUL",
+      "src_lang": "en",
+      "tgt_lang": "es",
+      "defect": "none",
+      "expected_label": "PRESERVED",
+      "expected_class": "FAITHFUL",
+      "src": "The license granted herein is non-exclusive and non-transferable.",
+      "tgt": "La licencia otorgada en el presente es no exclusiva e intransferible."
+    },
+    {
+      "id": "F6",
+      "group": "FAITHFUL",
+      "src_lang": "en",
+      "tgt_lang": "es",
+      "defect": "none",
+      "expected_label": "PRESERVED",
+      "expected_class": "FAITHFUL",
+      "src": "Disputes shall be resolved through binding arbitration in Madrid.",
+      "tgt": "Las controversias se resolveran mediante arbitraje vinculante en Madrid."
+    },
+    {
+      "id": "F7",
+      "group": "FAITHFUL",
+      "src_lang": "en",
+      "tgt_lang": "vi",
+      "defect": "none",
+      "expected_label": "PRESERVED",
+      "expected_class": "FAITHFUL",
+      "src": "Both parties agreed to call it a day after signing.",
+      "tgt": "Ca hai ben dong y ket thuc cong viec sau khi ky ket."
+    },
+    {
+      "id": "F8",
+      "group": "FAITHFUL",
+      "src_lang": "vi",
+      "tgt_lang": "en",
+      "defect": "none",
+      "expected_label": "PRESERVED",
+      "expected_class": "FAITHFUL",
+      "src": "Bien ban nay da duoc hoi dong phe duyet vao ngay 15/10/2026.",
+      "tgt": "The council approved these minutes on 15/10/2026."
+    },
+    {
+      "id": "C1",
+      "group": "CORRUPTED",
+      "src_lang": "en",
+      "tgt_lang": "vi",
+      "defect": "changed_number",
+      "expected_label": "ANCHOR_ALTERED",
+      "expected_class": "MATERIAL_LOSS",
+      "src": "Notice period is 30 days.",
+      "tgt": "Thoi han thong bao la 60 ngay."
+    },
+    {
+      "id": "C2",
+      "group": "CORRUPTED",
+      "src_lang": "en",
+      "tgt_lang": "vi",
+      "defect": "changed_date",
+      "expected_label": "ANCHOR_ALTERED",
+      "expected_class": "MATERIAL_LOSS",
+      "src": "The agreement expires on 2026-10-17.",
+      "tgt": "Thoa thuan het han vao ngay 25/10/2026."
+    },
+    {
+      "id": "C3",
+      "group": "CORRUPTED",
+      "src_lang": "en",
+      "tgt_lang": "vi",
+      "defect": "flipped_negation",
+      "expected_label": "DISTORTED",
+      "expected_class": "MATERIAL_LOSS",
+      "src": "Party A shall not disclose confidential data.",
+      "tgt": "Ben A se tiet lo du lieu bao mat."
+    },
+    {
+      "id": "C4",
+      "group": "CORRUPTED",
+      "src_lang": "en",
+      "tgt_lang": "vi",
+      "defect": "must_to_may",
+      "expected_label": "DISTORTED",
+      "expected_class": "MATERIAL_LOSS",
+      "src": "Licensee must submit quarterly audits.",
+      "tgt": "Ben duoc cap phep co the nop bao cao kiem toan hang quy."
+    },
+    {
+      "id": "C5",
+      "group": "CORRUPTED",
+      "src_lang": "en",
+      "tgt_lang": "vi",
+      "defect": "all_to_some",
+      "expected_label": "DISTORTED",
+      "expected_class": "MATERIAL_LOSS",
+      "src": "All participants are entitled to voting rights.",
+      "tgt": "Mot so nguoi tham gia co quyen bieu quyet."
+    },
+    {
+      "id": "C6",
+      "group": "CORRUPTED",
+      "src_lang": "en",
+      "tgt_lang": "vi",
+      "defect": "dropped_clause",
+      "expected_label": "OMITTED",
+      "expected_class": "CONTENT_DRIFT",
+      "src": "Party B may sublease the premises only if approved in writing.",
+      "tgt": "Ben B co the cho thue lai mat bang."
+    },
+    {
+      "id": "C7",
+      "group": "CORRUPTED",
+      "src_lang": "en",
+      "tgt_lang": "vi",
+      "defect": "added_claim",
+      "expected_label": "ADDED",
+      "expected_class": "CONTENT_DRIFT",
+      "src": "Party A shall deliver 100 units.",
+      "tgt": "Ben A se giao 100 don vi va tang them 10 don vi mien phi."
+    },
+    {
+      "id": "C8",
+      "group": "CORRUPTED",
+      "src_lang": "en",
+      "tgt_lang": "vi",
+      "defect": "before_after_swap",
+      "expected_label": "DISTORTED",
+      "expected_class": "MATERIAL_LOSS",
+      "src": "Payment must be completed before inspection begins.",
+      "tgt": "Thanh toan phai duoc hoan tat sau khi bat dau kiem tra."
+    },
+    {
+      "id": "C9",
+      "group": "CORRUPTED",
+      "src_lang": "en",
+      "tgt_lang": "es",
+      "defect": "changed_named_entity",
+      "expected_label": "DISTORTED",
+      "expected_class": "MATERIAL_LOSS",
+      "src": "Disputes shall be settled by the Court of Madrid.",
+      "tgt": "Las controversias seran resueltas por el Tribunal de Barcelona."
+    },
+    {
+      "id": "C10",
+      "group": "CORRUPTED",
+      "src_lang": "en",
+      "tgt_lang": "vi",
+      "defect": "tone_only_change",
+      "expected_label": "SHIFTED",
+      "expected_class": "MINOR_SHIFT",
+      "src": "You must immediately cease and desist all unauthorized use.",
+      "tgt": "Chung toi tran trong de nghi ban vui long can nhac dung su dung."
+    },
+    {
+      "id": "C11",
+      "group": "FAITHFUL",
+      "src_lang": "en",
+      "tgt_lang": "es",
+      "defect": "passive_active_swap",
+      "expected_label": "PRESERVED",
+      "expected_class": "FAITHFUL",
+      "src": "The proposal was approved by the board on 2026-10-17.",
+      "tgt": "La junta directiva aprobo la propuesta el 17 de octubre de 2026."
+    },
+    {
+      "id": "C12",
+      "group": "CORRUPTED",
+      "src_lang": "en",
+      "tgt_lang": "vi",
+      "defect": "percentage_changed",
+      "expected_label": "ANCHOR_ALTERED",
+      "expected_class": "MATERIAL_LOSS",
+      "src": "A late penalty of 15% will be charged.",
+      "tgt": "Phi phat tra cham 25% se duoc ap dung."
+    },
+    {
+      "id": "C13",
+      "group": "CORRUPTED",
+      "src_lang": "vi",
+      "tgt_lang": "en",
+      "defect": "flipped_negation",
+      "expected_label": "DISTORTED",
+      "expected_class": "MATERIAL_LOSS",
+      "src": "Ben A khong chiu trach nhiem ve thiet hai gian tiep.",
+      "tgt": "Party A shall be liable for indirect damages."
+    },
+    {
+      "id": "C14",
+      "group": "CORRUPTED",
+      "src_lang": "es",
+      "tgt_lang": "en",
+      "defect": "must_to_may",
+      "expected_label": "DISTORTED",
+      "expected_class": "MATERIAL_LOSS",
+      "src": "El prestatario debe pagar el interes mensual.",
+      "tgt": "The borrower may pay the monthly interest."
+    },
+    {
+      "id": "C15",
+      "group": "CORRUPTED",
+      "src_lang": "vi",
+      "tgt_lang": "en",
+      "defect": "dropped_clause",
+      "expected_label": "OMITTED",
+      "expected_class": "CONTENT_DRIFT",
+      "src": "Tien dat coc se duoc hoan lai neu cong viec hoan thanh dung han.",
+      "tgt": "The deposit will be refunded."
+    },
+    {
+      "id": "C16",
+      "group": "CORRUPTED",
+      "src_lang": "en",
+      "tgt_lang": "vi",
+      "defect": "added_claim",
+      "expected_label": "ADDED",
+      "expected_class": "CONTENT_DRIFT",
+      "src": "The software is provided as-is without warranty.",
+      "tgt": "Phan mem duoc cung cap nhu hien trang va bao hanh 1 nam."
+    }
+  ]
+}

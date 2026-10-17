@@ -1,0 +1,26 @@
+{
+  "network": "GenLayer Studionet (Preview)",
+  "chainId": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "supersededDeployments": [
+    {
+      "name": "Probe (superseded diagnostic)",
+      "contractAddress": "0xC3335F8200571ddFee27dF35590681d86f5F1df4",
+      "deployTxHash": "0xb14dc8e3c83bdaaeb317dc8539cd2195b0a83c71e8cdf3ace5c14d5f375cf4d0",
+      "sourceSha256": "1ca57ae01b57652ff13210855f991ce96d23b5a1338bb0fdda90efd7b289109c",
+      "deployedAt": "2026-10-17T16:01:52.839Z"
+    }
+  ],
+  "explorerUrl": "https://explorer-studio.genlayer.com",
+  "mainContract": {
+    "name": "LinguaProof",
+    "contractAddress": "0xba67d808f2b7E533ec06655eB730Ef5B27623EBF",
+    "deployTxHash": "0x948a4f5ade97dff6a9a26f4fdc1a011e3873835566829711fb66f5ee5ce2cca4",
+    "sourceSha256": "36c9582c004e758503dd766fb9dbb848495b9f163138007a443c3751e456f140",
+    "deployedAt": "2026-10-17T16:21:30.406Z",
+    "deployLatencySec": "10.07",
+    "status": "ACCEPTED",
+    "result": "MAJORITY_AGREE",
+    "explorerUrl": "https://explorer-studio.genlayer.com/address/0xba67d808f2b7E533ec06655eB730Ef5B27623EBF"
+  }
+}

@@ -128,3 +128,42 @@ def validator_audit_fn(leader_res) -> bool:
 | **Tampering Numeric Amounts** | Translator alters financial amount in target text. | Deterministic Anchor Layer detects value disparity in code (`ANCHOR_ALTERED`), forcing severity 4 (`MATERIAL_LOSS`) regardless of model output. |
 | **Fake Quote Fabrication** | Compromised model outputs `DISTORTED` with invented quotes to penalize competitor. | Contract code independently verifies verbatim substring presence. Unverifiable quotes are downgraded to `UNCLEAR` (severity 0). |
 | **Re-entrancy & Replay** | Submitting identical translations or re-auditing without cooldown. | Duplicate registrations rejected via `dup:{sender}:{source_lang}:{target_lang}:{pairs_sha256}`. Cooldown enforced via deterministic chain clock (`AUDIT_COOLDOWN_SECONDS = 300`). |
+
+---
+
+## 9. Fidelity Score Formula & UNCLEAR Handling
+
+The on-chain fidelity score is computed strictly on-chain using the deterministic arithmetic formula implemented in `contracts/linguaproof.py`:
+
+```python
+def _compute_fidelity_score(severities: list[int], labels: list[str]) -> int:
+    n = len(severities)
+    if n == 0:
+        return 0
+    clean_cnt = 0.0
+    for s, l in zip(severities, labels):
+        if s == 0 and l == "PRESERVED":
+            clean_cnt += 1.0
+        elif s == 0 and l == "UNCLEAR":
+            clean_cnt += 0.5
+    return round(100.0 * clean_cnt / float(n))
+```
+
+### Mathematical Specification
+
+$$\text{Score} = \text{round}\left(100 \times \frac{P + 0.5 \times U}{N}\right)$$
+
+Where:
+- $N$ is the total number of aligned segments ($1 \le N \le 12$).
+- $P$ is the number of clean segments with severity 0 and label `PRESERVED`.
+- $U$ is the number of segments with severity 0 and label `UNCLEAR`.
+- Any segment with non-zero severity (Anchor Altered = 3, Distorted = 4, Omitted = 3, Shifted = 1) contributes $0$ points to the numerator.
+
+### INCONCLUSIVE Condition
+
+When the count of `UNCLEAR` segments strictly exceeds 25% of total segments in the translation:
+
+$$\text{if } U > 0.25 \times N \implies \text{Class} = \text{"INCONCLUSIVE"}$$
+
+This guarantees that translations with pervasive model ambiguity or ungrounded evaluations cannot claim an affirmative passing verdict (`FAITHFUL`), while isolated single-segment ambiguities in multi-segment translations do not prematurely discard an otherwise clean translation.
+

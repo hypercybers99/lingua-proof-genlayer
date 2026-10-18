@@ -1,21 +1,21 @@
 {
-  "recordedAt": "2026-10-17T16:20:29.886Z",
+  "evaluatedAt": "2026-10-18T07:55:05.144Z",
   "network": "GenLayer Studionet (Preview)",
-  "chainId": 61999,
-  "probeContract": "0xC3335F8200571ddFee27dF35590681d86f5F1df4",
-  "repetitions": 3,
-  "totalItems": 24,
-  "faithfulCount": 9,
-  "corruptedCount": 15,
-  "faithfulFalsePositives": 2,
-  "corruptedFalseNegatives": 0,
-  "specificTargets": {
-    "negationFlipsDetected3of3": true,
-    "mustMayDetected3of3": true,
-    "allSomeDetected3of3": true,
-    "numbersAndDatesCaughtByCode": true
+  "promptHashes": {
+    "stepA_SHA256": "778c27153f2cfb6f596f0d6ae0f437cfb4d370636d8a27ce386224c4cbb08e4e",
+    "stepB_SHA256": "ed0a8cf41c53924046372bcd8cd724e42be26a80114f25b5910f33378a76bc50",
+    "equalityConfirmed": true
   },
-  "items": {
+  "metrics": {
+    "faithfulControlsCount": 14,
+    "falsePositiveCount": 2,
+    "falsePositiveRatePct": 14.285714285714285,
+    "corruptedItemsCount": 15,
+    "falseNegativeCount": 2,
+    "falseNegativeRatePct": 13.333333333333334,
+    "targetMet": false
+  },
+  "resultsByItemId": {
     "F1": {
       "item": {
         "id": "F1",
@@ -30,34 +30,28 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "All payments under this contract must be made in USD.",
-          "modelLabel": "PRESERVED",
-          "effectiveLabel": "PRESERVED",
+          "repetition": 1,
+          "back_translation": "All payments under this contract must be made in USD.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
           "src_quote": "",
-          "back_quote": "",
-          "latencyA": "16.3",
-          "latencyB": "18.3"
+          "back_quote": ""
         },
         {
-          "rep": 2,
-          "back": "All payments under this contract must be made in USD.",
-          "modelLabel": "PRESERVED",
-          "effectiveLabel": "PRESERVED",
+          "repetition": 2,
+          "back_translation": "Tat ca cac khoan thanh toan theo hop dong nay phai duoc thuc hien bang USD.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
           "src_quote": "",
-          "back_quote": "",
-          "latencyA": "11.7",
-          "latencyB": "15.0"
+          "back_quote": ""
         },
         {
-          "rep": 3,
-          "back": "All payments under this contract must be made in USD.",
-          "modelLabel": "PRESERVED",
-          "effectiveLabel": "PRESERVED",
+          "repetition": 3,
+          "back_translation": "All payments under this contract must be made in USD.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
           "src_quote": "",
-          "back_quote": "",
-          "latencyA": "11.6",
-          "latencyB": "18.3"
+          "back_quote": ""
         }
       ],
       "anchorResult": "ANCHORS_OK",
@@ -81,34 +75,28 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "Termination notice must be sent at least 30 days in advance.",
-          "modelLabel": "PRESERVED",
-          "effectiveLabel": "PRESERVED",
+          "repetition": 1,
+          "back_translation": "Termination notice must be sent at least 30 days in advance.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
           "src_quote": "",
-          "back_quote": "",
-          "latencyA": "16.3",
-          "latencyB": "18.3"
+          "back_quote": ""
         },
         {
-          "rep": 2,
-          "back": "Notice of termination must be sent at least 30 days in advance.",
-          "modelLabel": "PRESERVED",
-          "effectiveLabel": "PRESERVED",
+          "repetition": 2,
+          "back_translation": "Thong bao cham dut phai duoc gui truoc it nhat 30 ngay.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
           "src_quote": "",
-          "back_quote": "",
-          "latencyA": "11.7",
-          "latencyB": "15.0"
+          "back_quote": ""
         },
         {
-          "rep": 3,
-          "back": "Notice of termination must be sent at least 30 days in advance.",
-          "modelLabel": "PRESERVED",
-          "effectiveLabel": "PRESERVED",
+          "repetition": 3,
+          "back_translation": "Notice of termination must be sent at least 30 days in advance.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
           "src_quote": "",
-          "back_quote": "",
-          "latencyA": "11.6",
-          "latencyB": "18.3"
+          "back_quote": ""
         }
       ],
       "anchorResult": "ANCHORS_OK",
@@ -127,39 +115,33 @@
         "defect": "none",
         "expected_label": "PRESERVED",
         "expected_class": "FAITHFUL",
-        "src": "Ben B co quyen kiem tra tai lieu dinh ky hang quy.",
-        "tgt": "Party B has the right to periodically inspect documents quarterly."
+        "src": "Ben B co quyen kiem tra cac tai lieu hang quy.",
+        "tgt": "Party B has the right to inspect documents quarterly."
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "Party B has the right to periodically inspect documents quarterly.",
-          "modelLabel": "PRESERVED",
-          "effectiveLabel": "PRESERVED",
+          "repetition": 1,
+          "back_translation": "Bên B có quyền kiểm tra tài liệu hàng quý.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
           "src_quote": "",
-          "back_quote": "",
-          "latencyA": "16.3",
-          "latencyB": "18.3"
+          "back_quote": ""
         },
         {
-          "rep": 2,
-          "back": "Ben B co quyen dinh ky kiem tra tai lieu hang quy.",
-          "modelLabel": "PRESERVED",
-          "effectiveLabel": "PRESERVED",
+          "repetition": 2,
+          "back_translation": "Bên B có quyền kiểm tra tài liệu hàng quý.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
           "src_quote": "",
-          "back_quote": "",
-          "latencyA": "11.7",
-          "latencyB": "15.0"
+          "back_quote": ""
         },
         {
-          "rep": 3,
-          "back": "Ben B, taraf\u0000 belgeleri \u0000eyreklik olarak periyodik denetleme hakkina sahiptir.",
-          "modelLabel": "PRESERVED",
-          "effectiveLabel": "PRESERVED",
+          "repetition": 3,
+          "back_translation": "Bên B có quyền kiểm tra tài liệu hàng quý.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
           "src_quote": "",
-          "back_quote": "",
-          "latencyA": "11.6",
-          "latencyB": "18.3"
+          "back_quote": ""
         }
       ],
       "anchorResult": "ANCHORS_OK",
@@ -183,40 +165,34 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "This agreement is made in two copies of equal legal validity.",
-          "modelLabel": "PRESERVED",
-          "effectiveLabel": "PRESERVED",
+          "repetition": 1,
+          "back_translation": "Thỏa thuận này được lập thành hai bản có giá trị pháp lý như nhau.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
           "src_quote": "",
-          "back_quote": "",
-          "latencyA": "16.3",
-          "latencyB": "18.3"
+          "back_quote": ""
         },
         {
-          "rep": 2,
-          "back": "Thoa thuan nay duoc lap thanh hai ban co gia tri phap ly ngang nhau.",
-          "modelLabel": "SHIFTED",
-          "effectiveLabel": "SHIFTED",
-          "src_quote": "Hop dong nay",
-          "back_quote": "Thoa thuan nay",
-          "latencyA": "11.7",
-          "latencyB": "15.0"
+          "repetition": 2,
+          "back_translation": "Thỏa thuận này được lập thành hai bản có giá trị pháp lý như nhau.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
         },
         {
-          "rep": 3,
-          "back": "Bu anlasma esit hukuki gecerlilige sahip iki nüsha halinde yapilmistir.",
-          "modelLabel": "PRESERVED",
-          "effectiveLabel": "PRESERVED",
+          "repetition": 3,
+          "back_translation": "Thỏa thuận này được lập thành hai bản có giá trị pháp lý ngang nhau.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
           "src_quote": "",
-          "back_quote": "",
-          "latencyA": "11.6",
-          "latencyB": "18.3"
+          "back_quote": ""
         }
       ],
       "anchorResult": "ANCHORS_OK",
       "labels": [
         "PRESERVED",
-        "SHIFTED",
+        "PRESERVED",
         "PRESERVED"
       ]
     },
@@ -234,34 +210,28 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "The license granted herein is non-exclusive and non-transferable.",
-          "modelLabel": "PRESERVED",
-          "effectiveLabel": "PRESERVED",
+          "repetition": 1,
+          "back_translation": "The license granted herein is non-exclusive and non-transferable.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
           "src_quote": "",
-          "back_quote": "",
-          "latencyA": "16.3",
-          "latencyB": "18.3"
+          "back_quote": ""
         },
         {
-          "rep": 2,
-          "back": "The license granted herein is non-exclusive and non-transferable.",
-          "modelLabel": "PRESERVED",
-          "effectiveLabel": "PRESERVED",
+          "repetition": 2,
+          "back_translation": "The license granted herein is non-exclusive and non-transferable.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
           "src_quote": "",
-          "back_quote": "",
-          "latencyA": "11.7",
-          "latencyB": "15.0"
+          "back_quote": ""
         },
         {
-          "rep": 3,
-          "back": "The license granted herein is non-exclusive and non-transferable.",
-          "modelLabel": "PRESERVED",
-          "effectiveLabel": "PRESERVED",
+          "repetition": 3,
+          "back_translation": "The license granted herein is non-exclusive and non-transferable.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
           "src_quote": "",
-          "back_quote": "",
-          "latencyA": "11.6",
-          "latencyB": "18.3"
+          "back_quote": ""
         }
       ],
       "anchorResult": "ANCHORS_OK",
@@ -275,8 +245,8 @@
       "item": {
         "id": "F6",
         "group": "FAITHFUL",
-        "src_lang": "en",
-        "tgt_lang": "es",
+        "src_lang": "es",
+        "tgt_lang": "en",
         "defect": "none",
         "expected_label": "PRESERVED",
         "expected_class": "FAITHFUL",
@@ -285,41 +255,35 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "Disputes will be resolved by binding arbitration in Madrid.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
-          "src_quote": "shall be resolved",
-          "back_quote": "will be resolved",
-          "latencyA": "16.3",
-          "latencyB": "18.3"
+          "repetition": 1,
+          "back_translation": "The disputes will be resolved through binding arbitration in Madrid.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
         },
         {
-          "rep": 2,
-          "back": "Disputes will be resolved through binding arbitration in Madrid.",
-          "modelLabel": "SHIFTED",
-          "effectiveLabel": "SHIFTED",
-          "src_quote": "shall",
-          "back_quote": "will",
-          "latencyA": "11.7",
-          "latencyB": "15.0"
+          "repetition": 2,
+          "back_translation": "Disputes will be resolved by binding arbitration in Madrid.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
         },
         {
-          "rep": 3,
-          "back": "The disputes will be resolved through binding arbitration in Madrid.",
-          "modelLabel": "SHIFTED",
-          "effectiveLabel": "SHIFTED",
-          "src_quote": "shall be resolved",
-          "back_quote": "will be resolved",
-          "latencyA": "11.6",
-          "latencyB": "18.3"
+          "repetition": 3,
+          "back_translation": "The disputes will be resolved through binding arbitration in Madrid.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
         }
       ],
       "anchorResult": "ANCHORS_OK",
       "labels": [
-        "DISTORTED",
-        "SHIFTED",
-        "SHIFTED"
+        "PRESERVED",
+        "PRESERVED",
+        "PRESERVED"
       ]
     },
     "F7": {
@@ -331,46 +295,40 @@
         "defect": "none",
         "expected_label": "PRESERVED",
         "expected_class": "FAITHFUL",
-        "src": "Both parties agreed to call it a day after signing.",
-        "tgt": "Ca hai ben dong y ket thuc cong viec sau khi ky ket."
+        "src": "The emergency committee requires 3 of 5 signatures to execute transactions.",
+        "tgt": "Uy ban khan cap yeu cau 3 trong so 5 chu ky de thuc thi cac giao dich."
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "Both parties agree to complete the work after signing.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
-          "src_quote": "agreed to call it a day",
-          "back_quote": "agree to complete the work",
-          "latencyA": "16.3",
-          "latencyB": "18.3"
+          "repetition": 1,
+          "back_translation": "The emergency committee requires 3 out of 5 signatures to execute transactions.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
         },
         {
-          "rep": 2,
-          "back": "Both parties agree to terminate the work after signing.",
-          "modelLabel": "SHIFTED",
-          "effectiveLabel": "SHIFTED",
-          "src_quote": "call it a day",
-          "back_quote": "terminate the work",
-          "latencyA": "11.7",
-          "latencyB": "15.0"
+          "repetition": 2,
+          "back_translation": "Uy ban khan cap yeu cau 3 trong so 5 chu ky de thuc thi cac giao dich.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
         },
         {
-          "rep": 3,
-          "back": "Both parties agree to terminate the work after signing.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
-          "src_quote": "agreed to call it a day",
-          "back_quote": "agree to terminate the work",
-          "latencyA": "11.6",
-          "latencyB": "18.3"
+          "repetition": 3,
+          "back_translation": "The emergency committee requires 3 out of 5 signatures to execute transactions.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
         }
       ],
       "anchorResult": "ANCHORS_OK",
       "labels": [
-        "DISTORTED",
-        "SHIFTED",
-        "DISTORTED"
+        "PRESERVED",
+        "PRESERVED",
+        "PRESERVED"
       ]
     },
     "F8": {
@@ -387,41 +345,305 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "The council approved these minutes on 15/10/2026.",
-          "modelLabel": "PRESERVED",
-          "effectiveLabel": "PRESERVED",
-          "src_quote": "",
-          "back_quote": "",
-          "latencyA": "16.3",
-          "latencyB": "18.3"
+          "repetition": 1,
+          "back_translation": "Hội đồng đã phê duyệt biên bản này vào ngày 15/10/2026.",
+          "raw_label": "SHIFTED",
+          "effective_label": "SHIFTED",
+          "src_quote": "Bien ban nay da duoc hoi dong phe duyet vao ngay 15/10/2026",
+          "back_quote": "Hội đồng đã phê duyệt biên bản này vào ngày 15/10/2026"
         },
         {
-          "rep": 2,
-          "back": "Hoi dong da phe duyet bien ban nay vao 15/10/2026.",
-          "modelLabel": "PRESERVED",
-          "effectiveLabel": "PRESERVED",
-          "src_quote": "",
-          "back_quote": "",
-          "latencyA": "11.7",
-          "latencyB": "15.0"
+          "repetition": 2,
+          "back_translation": "Hội đồng đã phê duyệt biên bản này vào ngày 15/10/2026.",
+          "raw_label": "DISTORTED",
+          "effective_label": "PRESERVED",
+          "src_quote": "Biên bản này đã được hội đồng phê duyệt vào ngày 15/10/2026",
+          "back_quote": "Hội đồng đã phê duyệt biên bản này vào ngày 15/10/2026"
         },
         {
-          "rep": 3,
-          "back": "Consejo aprobó estas actas el 15/10/2026.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
-          "src_quote": "hoi dong phe duyet",
-          "back_quote": "Consejo aprobó",
-          "latencyA": "11.6",
-          "latencyB": "18.3"
+          "repetition": 3,
+          "back_translation": "Hội đồng đã phê duyệt biên bản này vào ngày 15/10/2026.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
+        }
+      ],
+      "anchorResult": "ANCHORS_OK",
+      "labels": [
+        "SHIFTED",
+        "PRESERVED",
+        "PRESERVED"
+      ]
+    },
+    "F9": {
+      "item": {
+        "id": "F9",
+        "group": "FAITHFUL",
+        "src_lang": "en",
+        "tgt_lang": "vi",
+        "defect": "none",
+        "expected_label": "PRESERVED",
+        "expected_class": "FAITHFUL",
+        "src": "The LinguaProof protocol verifies the accuracy of translations for governance proposals.",
+        "tgt": "Giao thức LinguaProof xác minh tính chính xác của các bản dịch đối với các đề xuất quản trị."
+      },
+      "runs": [
+        {
+          "repetition": 1,
+          "back_translation": "The LinguaProof protocol verifies the accuracy of translations for governance proposals.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
+        },
+        {
+          "repetition": 2,
+          "back_translation": "Giao thức LinguaProof xác minh tính chính xác của các bản dịch đối với các đề xuất quản trị.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
+        },
+        {
+          "repetition": 3,
+          "back_translation": "The LinguaProof protocol verifies the accuracy of translations for governance proposals.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
         }
       ],
       "anchorResult": "ANCHORS_OK",
       "labels": [
         "PRESERVED",
         "PRESERVED",
-        "DISTORTED"
+        "PRESERVED"
+      ]
+    },
+    "F10": {
+      "item": {
+        "id": "F10",
+        "group": "FAITHFUL",
+        "src_lang": "en",
+        "tgt_lang": "vi",
+        "defect": "none",
+        "expected_label": "PRESERVED",
+        "expected_class": "FAITHFUL",
+        "src": "The treasury allocated 50,000 USD to the ecosystem development fund.",
+        "tgt": "Kho bạc đã phân bổ 50,000 USD cho quỹ phát triển hệ sinh thái."
+      },
+      "runs": [
+        {
+          "repetition": 1,
+          "back_translation": "The treasury has allocated 50,000 USD to the ecosystem development fund.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
+        },
+        {
+          "repetition": 2,
+          "back_translation": "Kho bạc đã phân bổ 50,000 USD cho quỹ phát triển hệ sinh thái.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
+        },
+        {
+          "repetition": 3,
+          "back_translation": "The Treasury has allocated 50,000 USD to the ecosystem development fund.",
+          "raw_label": "SHIFTED",
+          "effective_label": "SHIFTED",
+          "src_quote": "The treasury allocated",
+          "back_quote": "The Treasury has allocated"
+        }
+      ],
+      "anchorResult": "ANCHORS_OK",
+      "labels": [
+        "PRESERVED",
+        "PRESERVED",
+        "SHIFTED"
+      ]
+    },
+    "F11": {
+      "item": {
+        "id": "F11",
+        "group": "FAITHFUL",
+        "src_lang": "en",
+        "tgt_lang": "vi",
+        "defect": "none",
+        "expected_label": "PRESERVED",
+        "expected_class": "FAITHFUL",
+        "src": "Network upgrades require approval from 0xba67d808f2b7e533ec06655eb730ef5b27623ebf before execution.",
+        "tgt": "Các nâng cấp mạng lưới yêu cầu sự chấp thuận từ 0xba67d808f2b7e533ec06655eb730ef5b27623ebf trước khi thực thi."
+      },
+      "runs": [
+        {
+          "repetition": 1,
+          "back_translation": "Network upgrades require approval from 0xba67d808f2b7e533ec06655eb730ef5b27623ebf before execution.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
+        },
+        {
+          "repetition": 2,
+          "back_translation": "Các nâng cấp mạng lưới yêu cầu sự chấp thuận từ 0xba67d808f2b7e533ec06655eb730ef5b27623ebf trước khi thực thi.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
+        },
+        {
+          "repetition": 3,
+          "back_translation": "Network upgrades require approval from 0xba67d808f2b7e533ec06655eb730ef5b27623ebf before execution.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
+        }
+      ],
+      "anchorResult": "ANCHORS_OK",
+      "labels": [
+        "PRESERVED",
+        "PRESERVED",
+        "PRESERVED"
+      ]
+    },
+    "F12": {
+      "item": {
+        "id": "F12",
+        "group": "FAITHFUL",
+        "src_lang": "en",
+        "tgt_lang": "vi",
+        "defect": "none",
+        "expected_label": "PRESERVED",
+        "expected_class": "FAITHFUL",
+        "src": "The committee approved the resolution titled \"Q4 Security Audit\".",
+        "tgt": "Ủy ban đã phê duyệt nghị quyết có tiêu đề \"Q4 Security Audit\"."
+      },
+      "runs": [
+        {
+          "repetition": 1,
+          "back_translation": "The committee has approved the resolution titled \"Q4 Security Audit\".",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
+        },
+        {
+          "repetition": 2,
+          "back_translation": "Ủy ban đã phê duyệt nghị quyết có tiêu đề \"Q4 Security Audit\".",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
+        },
+        {
+          "repetition": 3,
+          "back_translation": "The committee approved the resolution titled \"Q4 Security Audit\".",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
+        }
+      ],
+      "anchorResult": "ANCHORS_OK",
+      "labels": [
+        "PRESERVED",
+        "PRESERVED",
+        "PRESERVED"
+      ]
+    },
+    "F13": {
+      "item": {
+        "id": "F13",
+        "group": "FAITHFUL",
+        "src_lang": "vi",
+        "tgt_lang": "en",
+        "defect": "none",
+        "expected_label": "PRESERVED",
+        "expected_class": "FAITHFUL",
+        "src": "Số dư dự trữ hiện tại là 1,500,000 EUR tính đến 2026-10-15.",
+        "tgt": "The current reserve balance is 1,500,000 EUR as of 2026-10-15."
+      },
+      "runs": [
+        {
+          "repetition": 1,
+          "back_translation": "Số dư dự trữ hiện tại là 1,500,000 EUR tính đến ngày 2026-10-15.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
+        },
+        {
+          "repetition": 2,
+          "back_translation": "Số dư quỹ dự trữ hiện tại là 1,500,000 EUR tính đến 2026-10-15.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
+        },
+        {
+          "repetition": 3,
+          "back_translation": "Số dư dự trữ hiện tại là 1.500.000 EUR tính đến ngày 2026-10-15.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
+        }
+      ],
+      "anchorResult": "ANCHORS_OK",
+      "labels": [
+        "PRESERVED",
+        "PRESERVED",
+        "PRESERVED"
+      ]
+    },
+    "F14": {
+      "item": {
+        "id": "F14",
+        "group": "FAITHFUL",
+        "src_lang": "vi",
+        "tgt_lang": "en",
+        "defect": "none",
+        "expected_label": "PRESERVED",
+        "expected_class": "FAITHFUL",
+        "src": "Người đại diện 0x99cae390c7a56d427c6e464d43e31401f4324213 đã ký xác nhận giao dịch tại https://governance.linguaproof.io.",
+        "tgt": "Representative 0x99cae390c7a56d427c6e464d43e31401f4324213 signed the transaction confirmation at https://governance.linguaproof.io."
+      },
+      "runs": [
+        {
+          "repetition": 1,
+          "back_translation": "Đại diện 0x99cae390c7a56d427c6e464d43e31401f4324213 đã ký xác nhận giao dịch tại https://governance.linguaproof.io.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
+        },
+        {
+          "repetition": 2,
+          "back_translation": "Đại diện 0x99cae390c7a56d427c6e464d43e31401f4324213 đã ký xác nhận giao dịch tại https://governance.linguaproof.io.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
+        },
+        {
+          "repetition": 3,
+          "back_translation": "Đại diện 0x99cae390c7a56d427c6e464d43e31401f4324213 đã ký xác nhận giao dịch tại https://governance.linguaproof.io.",
+          "raw_label": "PRESERVED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": ""
+        }
+      ],
+      "anchorResult": "ANCHORS_OK",
+      "labels": [
+        "PRESERVED",
+        "PRESERVED",
+        "PRESERVED"
       ]
     },
     "C1": {
@@ -438,41 +660,35 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "The notice period is 60 days.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "ANCHOR_ALTERED",
+          "repetition": 1,
+          "back_translation": "The notice period is 60 days.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "30 days",
-          "back_quote": "60 days",
-          "latencyA": "15.1",
-          "latencyB": "15.1"
+          "back_quote": "60 days"
         },
         {
-          "rep": 2,
-          "back": "The notification period is 60 days.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "ANCHOR_ALTERED",
+          "repetition": 2,
+          "back_translation": "The notice period is 60 days.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "30 days",
-          "back_quote": "60 days",
-          "latencyA": "11.6",
-          "latencyB": "18.3"
+          "back_quote": "60 days"
         },
         {
-          "rep": 3,
-          "back": "The notice period is 60 days.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "ANCHOR_ALTERED",
+          "repetition": 3,
+          "back_translation": "The notification period is 60 days.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "30 days",
-          "back_quote": "60 days",
-          "latencyA": "15.2",
-          "latencyB": "11.8"
+          "back_quote": "60 days"
         }
       ],
       "anchorResult": "ANCHOR_ALTERED",
       "labels": [
-        "ANCHOR_ALTERED",
-        "ANCHOR_ALTERED",
-        "ANCHOR_ALTERED"
+        "DISTORTED",
+        "DISTORTED",
+        "DISTORTED"
       ]
     },
     "C2": {
@@ -489,41 +705,35 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "The agreement expires on 25/10/2026.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "ANCHOR_ALTERED",
+          "repetition": 1,
+          "back_translation": "The agreement expires on 25/10/2026.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "2026-10-17",
-          "back_quote": "25/10/2026",
-          "latencyA": "15.1",
-          "latencyB": "15.1"
+          "back_quote": "25/10/2026"
         },
         {
-          "rep": 2,
-          "back": "The agreement expires on 25/10/2026.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "ANCHOR_ALTERED",
+          "repetition": 2,
+          "back_translation": "The agreement expires on 25/10/2026.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "2026-10-17",
-          "back_quote": "25/10/2026",
-          "latencyA": "11.6",
-          "latencyB": "18.3"
+          "back_quote": "25/10/2026"
         },
         {
-          "rep": 3,
-          "back": "The agreement expires on 25/10/2026.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "ANCHOR_ALTERED",
+          "repetition": 3,
+          "back_translation": "The agreement expires on 25/10/2026.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "2026-10-17",
-          "back_quote": "25/10/2026",
-          "latencyA": "15.2",
-          "latencyB": "11.8"
+          "back_quote": "25/10/2026"
         }
       ],
       "anchorResult": "ANCHOR_ALTERED",
       "labels": [
-        "ANCHOR_ALTERED",
-        "ANCHOR_ALTERED",
-        "ANCHOR_ALTERED"
+        "DISTORTED",
+        "DISTORTED",
+        "DISTORTED"
       ]
     },
     "C3": {
@@ -540,34 +750,28 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "Party A will disclose confidential data.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
-          "src_quote": "shall not disclose",
-          "back_quote": "will disclose",
-          "latencyA": "15.1",
-          "latencyB": "15.1"
-        },
-        {
-          "rep": 2,
-          "back": "Party A will disclose confidential data.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
-          "src_quote": "shall not disclose",
-          "back_quote": "will disclose",
-          "latencyA": "11.6",
-          "latencyB": "18.3"
-        },
-        {
-          "rep": 3,
-          "back": "Party A will disclose confidential data.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
+          "repetition": 1,
+          "back_translation": "Party A will disclose confidential data.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "shall not disclose confidential data",
-          "back_quote": "will disclose confidential data",
-          "latencyA": "15.2",
-          "latencyB": "11.8"
+          "back_quote": "will disclose confidential data"
+        },
+        {
+          "repetition": 2,
+          "back_translation": "Party A will disclose confidential data.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
+          "src_quote": "shall not disclose confidential data",
+          "back_quote": "will disclose confidential data"
+        },
+        {
+          "repetition": 3,
+          "back_translation": "Party A will disclose confidential data.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
+          "src_quote": "shall not disclose confidential data",
+          "back_quote": "will disclose confidential data"
         }
       ],
       "anchorResult": "ANCHORS_OK",
@@ -591,34 +795,28 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "The licensed party may submit quarterly audit reports.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
-          "src_quote": "must submit",
-          "back_quote": "may submit",
-          "latencyA": "15.1",
-          "latencyB": "15.1"
-        },
-        {
-          "rep": 2,
-          "back": "The licensed party may submit quarterly audit reports.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
-          "src_quote": "must",
-          "back_quote": "may",
-          "latencyA": "11.6",
-          "latencyB": "18.3"
-        },
-        {
-          "rep": 3,
-          "back": "The licensed party may submit quarterly audit reports.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
+          "repetition": 1,
+          "back_translation": "The licensee can submit quarterly audit reports.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "must submit quarterly audits",
-          "back_quote": "may submit quarterly audit reports",
-          "latencyA": "15.2",
-          "latencyB": "11.8"
+          "back_quote": "can submit quarterly audit reports"
+        },
+        {
+          "repetition": 2,
+          "back_translation": "The licensee may submit quarterly audit reports.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
+          "src_quote": "must submit quarterly audits",
+          "back_quote": "may submit quarterly audit reports"
+        },
+        {
+          "repetition": 3,
+          "back_translation": "The licensed party may submit quarterly audit reports.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
+          "src_quote": "must submit quarterly audits",
+          "back_quote": "may submit quarterly audit reports"
         }
       ],
       "anchorResult": "ANCHORS_OK",
@@ -642,34 +840,28 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "Some participants have the right to vote.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
-          "src_quote": "All participants",
-          "back_quote": "Some participants",
-          "latencyA": "15.1",
-          "latencyB": "15.1"
+          "repetition": 1,
+          "back_translation": "Some participants have voting rights.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
+          "src_quote": "All participants are entitled to voting rights.",
+          "back_quote": "Some participants have voting rights."
         },
         {
-          "rep": 2,
-          "back": "Some participants have voting rights.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
-          "src_quote": "All",
-          "back_quote": "Some",
-          "latencyA": "11.6",
-          "latencyB": "18.3"
+          "repetition": 2,
+          "back_translation": "Some participants have voting rights.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
+          "src_quote": "All participants are entitled to voting rights.",
+          "back_quote": "Some participants have voting rights."
         },
         {
-          "rep": 3,
-          "back": "Some participants have the right to vote.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
-          "src_quote": "All participants are entitled to voting rights",
-          "back_quote": "Some participants have the right to vote",
-          "latencyA": "15.2",
-          "latencyB": "11.8"
+          "repetition": 3,
+          "back_translation": "Some participants have the right to vote.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
+          "src_quote": "All participants are entitled to voting rights.",
+          "back_quote": "Some participants have the right to vote."
         }
       ],
       "anchorResult": "ANCHORS_OK",
@@ -693,34 +885,28 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "Party B may sublease the premises.",
-          "modelLabel": "OMITTED",
-          "effectiveLabel": "OMITTED",
+          "repetition": 1,
+          "back_translation": "Party B can sublease the premises.",
+          "raw_label": "OMITTED",
+          "effective_label": "OMITTED",
           "src_quote": "only if approved in writing",
-          "back_quote": "Party B may sublease the premises.",
-          "latencyA": "15.1",
-          "latencyB": "15.1"
+          "back_quote": ""
         },
         {
-          "rep": 2,
-          "back": "Party B may sublease the land.",
-          "modelLabel": "OMITTED",
-          "effectiveLabel": "OMITTED",
+          "repetition": 2,
+          "back_translation": "Party B can sublease the premises.",
+          "raw_label": "OMITTED",
+          "effective_label": "OMITTED",
           "src_quote": "only if approved in writing",
-          "back_quote": "",
-          "latencyA": "11.6",
-          "latencyB": "18.3"
+          "back_quote": ""
         },
         {
-          "rep": 3,
-          "back": "Party B may sublease the premises.",
-          "modelLabel": "OMITTED",
-          "effectiveLabel": "OMITTED",
+          "repetition": 3,
+          "back_translation": "Party B may sublease the land.",
+          "raw_label": "OMITTED",
+          "effective_label": "OMITTED",
           "src_quote": "only if approved in writing",
-          "back_quote": "",
-          "latencyA": "15.2",
-          "latencyB": "11.8"
+          "back_quote": ""
         }
       ],
       "anchorResult": "ANCHORS_OK",
@@ -744,41 +930,35 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "Party A will deliver 100 units and add an additional 10 units for free.",
-          "modelLabel": "ADDED",
-          "effectiveLabel": "ADDED",
-          "src_quote": "Party A shall deliver 100 units.",
-          "back_quote": "and add an additional 10 units for free",
-          "latencyA": "15.1",
-          "latencyB": "15.1"
+          "repetition": 1,
+          "back_translation": "Party A will deliver 100 units and add 10 free units.",
+          "raw_label": "ADDED",
+          "effective_label": "PRESERVED",
+          "src_quote": "",
+          "back_quote": "and add 10 free units"
         },
         {
-          "rep": 2,
-          "back": "Party A will deliver 100 units and additionally provide 10 units free of charge.",
-          "modelLabel": "ADDED",
-          "effectiveLabel": "ADDED",
+          "repetition": 2,
+          "back_translation": "Party A will deliver 100 units and add 10 units for free.",
+          "raw_label": "ADDED",
+          "effective_label": "PRESERVED",
           "src_quote": "",
-          "back_quote": "and additionally provide 10 units free of charge",
-          "latencyA": "11.6",
-          "latencyB": "18.3"
+          "back_quote": "and add 10 units for free"
         },
         {
-          "rep": 3,
-          "back": "Party A will deliver 100 units and add an additional 10 units for free.",
-          "modelLabel": "ADDED",
-          "effectiveLabel": "ADDED",
+          "repetition": 3,
+          "back_translation": "Party A will deliver 100 units and additionally provide 10 units free of charge.",
+          "raw_label": "ADDED",
+          "effective_label": "PRESERVED",
           "src_quote": "",
-          "back_quote": "and add an additional 10 units for free",
-          "latencyA": "15.2",
-          "latencyB": "11.8"
+          "back_quote": "and additionally provide 10 units free of charge"
         }
       ],
       "anchorResult": "ANCHORS_OK",
       "labels": [
-        "ADDED",
-        "ADDED",
-        "ADDED"
+        "PRESERVED",
+        "PRESERVED",
+        "PRESERVED"
       ]
     },
     "C8": {
@@ -795,34 +975,28 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "Payment must be completed after the inspection begins.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
+          "repetition": 1,
+          "back_translation": "Payment must be completed after starting the inspection.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "before inspection begins",
-          "back_quote": "after the inspection begins",
-          "latencyA": "15.1",
-          "latencyB": "15.1"
+          "back_quote": "after starting the inspection"
         },
         {
-          "rep": 2,
-          "back": "Payment must be completed after the inspection begins.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
-          "src_quote": "before",
-          "back_quote": "after",
-          "latencyA": "11.6",
-          "latencyB": "18.3"
+          "repetition": 2,
+          "back_translation": "Payment must be completed after starting the inspection.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
+          "src_quote": "before inspection begins",
+          "back_quote": "after starting the inspection"
         },
         {
-          "rep": 3,
-          "back": "Payment must be completed after the inspection begins.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
+          "repetition": 3,
+          "back_translation": "Payment must be completed after the inspection begins.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "before inspection begins",
-          "back_quote": "after the inspection begins",
-          "latencyA": "15.2",
-          "latencyB": "11.8"
+          "back_quote": "after the inspection begins"
         }
       ],
       "anchorResult": "ANCHORS_OK",
@@ -844,44 +1018,9 @@
         "src": "Disputes shall be settled by the Court of Madrid.",
         "tgt": "Las controversias seran resueltas por el Tribunal de Barcelona."
       },
-      "runs": [
-        {
-          "rep": 1,
-          "back": "The controversies will be resolved by the Court of Barcelona.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
-          "src_quote": "Court of Madrid",
-          "back_quote": "Court of Barcelona",
-          "latencyA": "31.6",
-          "latencyB": "8.3"
-        },
-        {
-          "rep": 2,
-          "back": "Disputes will be resolved by the Barcelona Court.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
-          "src_quote": "Court of Madrid",
-          "back_quote": "Barcelona Court",
-          "latencyA": "11.7",
-          "latencyB": "15.2"
-        },
-        {
-          "rep": 3,
-          "back": "The controversies will be resolved by the Court of Barcelona.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
-          "src_quote": "Court of Madrid",
-          "back_quote": "Court of Barcelona",
-          "latencyA": "11.7",
-          "latencyB": "8.5"
-        }
-      ],
+      "runs": [],
       "anchorResult": "ANCHORS_OK",
-      "labels": [
-        "DISTORTED",
-        "DISTORTED",
-        "DISTORTED"
-      ]
+      "labels": []
     },
     "C10": {
       "item": {
@@ -897,34 +1036,28 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "We respectfully suggest you consider using properly.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
+          "repetition": 1,
+          "back_translation": "We sincerely suggest you please consider stopping use.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "must immediately cease and desist all unauthorized use",
-          "back_quote": "We respectfully suggest you consider using properly",
-          "latencyA": "31.6",
-          "latencyB": "8.3"
+          "back_quote": "sincerely suggest you please consider stopping use"
         },
         {
-          "rep": 2,
-          "back": "We respectfully request that you please consider using it properly.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
+          "repetition": 2,
+          "back_translation": "We sincerely suggest you please consider stopping use.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "must immediately cease and desist all unauthorized use",
-          "back_quote": "respectfully request that you please consider using it properly",
-          "latencyA": "11.7",
-          "latencyB": "15.2"
+          "back_quote": "sincerely suggest you please consider stopping use"
         },
         {
-          "rep": 3,
-          "back": "We respectfully request that you please consider not using.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
+          "repetition": 3,
+          "back_translation": "We respectfully suggest that you please consider using it properly.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "must immediately cease and desist all unauthorized use",
-          "back_quote": "respectfully request that you please consider not using",
-          "latencyA": "11.7",
-          "latencyB": "8.5"
+          "back_quote": "respectfully suggest that you please consider using it properly"
         }
       ],
       "anchorResult": "ANCHORS_OK",
@@ -946,44 +1079,9 @@
         "src": "The proposal was approved by the board on 2026-10-17.",
         "tgt": "La junta directiva aprobo la propuesta el 17 de octubre de 2026."
       },
-      "runs": [
-        {
-          "rep": 1,
-          "back": "The board of directors approved the proposal on October 17, 2026.",
-          "modelLabel": "PRESERVED",
-          "effectiveLabel": "PRESERVED",
-          "src_quote": "",
-          "back_quote": "",
-          "latencyA": "31.6",
-          "latencyB": "8.3"
-        },
-        {
-          "rep": 2,
-          "back": "The board of directors approved the proposal on October 17, 2026.",
-          "modelLabel": "PRESERVED",
-          "effectiveLabel": "PRESERVED",
-          "src_quote": "",
-          "back_quote": "",
-          "latencyA": "11.7",
-          "latencyB": "15.2"
-        },
-        {
-          "rep": 3,
-          "back": "The board of directors approved the proposal on October 17, 2026.",
-          "modelLabel": "PRESERVED",
-          "effectiveLabel": "PRESERVED",
-          "src_quote": "",
-          "back_quote": "",
-          "latencyA": "11.7",
-          "latencyB": "8.5"
-        }
-      ],
+      "runs": [],
       "anchorResult": "ANCHORS_OK",
-      "labels": [
-        "PRESERVED",
-        "PRESERVED",
-        "PRESERVED"
-      ]
+      "labels": []
     },
     "C12": {
       "item": {
@@ -999,41 +1097,35 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "Late payment penalty of 25% will be applied.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "ANCHOR_ALTERED",
+          "repetition": 1,
+          "back_translation": "A late payment penalty fee of 25% will be applied.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "15%",
-          "back_quote": "25%",
-          "latencyA": "31.6",
-          "latencyB": "8.3"
+          "back_quote": "25%"
         },
         {
-          "rep": 2,
-          "back": "A 25% late payment penalty will be applied.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "ANCHOR_ALTERED",
+          "repetition": 2,
+          "back_translation": "A late payment fee of 25% will be applied.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "15%",
-          "back_quote": "25%",
-          "latencyA": "11.7",
-          "latencyB": "15.2"
+          "back_quote": "25%"
         },
         {
-          "rep": 3,
-          "back": "A late payment fee of 25% will be applied.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "ANCHOR_ALTERED",
+          "repetition": 3,
+          "back_translation": "A 25% late payment penalty will be applied.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "15%",
-          "back_quote": "25%",
-          "latencyA": "11.7",
-          "latencyB": "8.5"
+          "back_quote": "25%"
         }
       ],
       "anchorResult": "ANCHOR_ALTERED",
       "labels": [
-        "ANCHOR_ALTERED",
-        "ANCHOR_ALTERED",
-        "ANCHOR_ALTERED"
+        "DISTORTED",
+        "DISTORTED",
+        "DISTORTED"
       ]
     },
     "C13": {
@@ -1050,34 +1142,28 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "Party A shall be liable for indirect damages.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
+          "repetition": 1,
+          "back_translation": "Bên A sẽ chịu trách nhiệm đối với các thiệt hại gián tiếp.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "khong chiu trach nhiem",
-          "back_quote": "shall be liable",
-          "latencyA": "31.6",
-          "latencyB": "8.3"
+          "back_quote": "sẽ chịu trách nhiệm"
         },
         {
-          "rep": 2,
-          "back": "Party A shall be liable for indirect damages.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
-          "src_quote": "Ben A khong chiu trach nhiem ve thiet hai gian tiep",
-          "back_quote": "Party A shall be liable for indirect damages",
-          "latencyA": "11.7",
-          "latencyB": "15.2"
+          "repetition": 2,
+          "back_translation": "Bên A phải chịu trách nhiệm về thiệt hại gián tiếp.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
+          "src_quote": "khong chiu trach nhiem",
+          "back_quote": "phải chịu trách nhiệm"
         },
         {
-          "rep": 3,
-          "back": "Party A shall be liable for indirect damages.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
+          "repetition": 3,
+          "back_translation": "Bên A sẽ chịu trách nhiệm cho các thiệt hại gián tiếp.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "khong chiu trach nhiem ve thiet hai gian tiep",
-          "back_quote": "shall be liable for indirect damages",
-          "latencyA": "11.7",
-          "latencyB": "8.5"
+          "back_quote": "sẽ chịu trách nhiệm cho các thiệt hại gián tiếp"
         }
       ],
       "anchorResult": "ANCHORS_OK",
@@ -1101,34 +1187,28 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "The borrower may pay the monthly interest.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
+          "repetition": 1,
+          "back_translation": "Bên vay có thể trả lãi hàng tháng.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "debe pagar",
-          "back_quote": "may pay",
-          "latencyA": "31.6",
-          "latencyB": "8.3"
+          "back_quote": "có thể trả"
         },
         {
-          "rep": 2,
-          "back": "The borrower may pay the monthly interest.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
+          "repetition": 2,
+          "back_translation": "Người vay có thể trả lãi hàng tháng.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "debe pagar",
-          "back_quote": "may pay",
-          "latencyA": "11.7",
-          "latencyB": "15.2"
+          "back_quote": "có thể trả"
         },
         {
-          "rep": 3,
-          "back": "The borrower may pay the monthly interest.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
+          "repetition": 3,
+          "back_translation": "Người vay có thể thanh toán lãi hàng tháng.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "debe pagar",
-          "back_quote": "may pay",
-          "latencyA": "11.7",
-          "latencyB": "8.5"
+          "back_quote": "có thể thanh toán"
         }
       ],
       "anchorResult": "ANCHORS_OK",
@@ -1152,34 +1232,28 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "The deposit will be refunded.",
-          "modelLabel": "OMITTED",
-          "effectiveLabel": "OMITTED",
+          "repetition": 1,
+          "back_translation": "Khoản đặt cọc sẽ được hoàn lại.",
+          "raw_label": "OMITTED",
+          "effective_label": "OMITTED",
           "src_quote": "neu cong viec hoan thanh dung han",
-          "back_quote": "",
-          "latencyA": "31.6",
-          "latencyB": "8.3"
+          "back_quote": ""
         },
         {
-          "rep": 2,
-          "back": "The deposit will be refunded.",
-          "modelLabel": "OMITTED",
-          "effectiveLabel": "OMITTED",
+          "repetition": 2,
+          "back_translation": "Tiền đặt cọc sẽ được hoàn trả.",
+          "raw_label": "OMITTED",
+          "effective_label": "OMITTED",
           "src_quote": "neu cong viec hoan thanh dung han",
-          "back_quote": "",
-          "latencyA": "11.7",
-          "latencyB": "15.2"
+          "back_quote": ""
         },
         {
-          "rep": 3,
-          "back": "The deposit will be refunded.",
-          "modelLabel": "OMITTED",
-          "effectiveLabel": "OMITTED",
+          "repetition": 3,
+          "back_translation": "Tiền đặt cọc sẽ được hoàn lại.",
+          "raw_label": "OMITTED",
+          "effective_label": "OMITTED",
           "src_quote": "neu cong viec hoan thanh dung han",
-          "back_quote": "",
-          "latencyA": "11.7",
-          "latencyB": "8.5"
+          "back_quote": ""
         }
       ],
       "anchorResult": "ANCHORS_OK",
@@ -1203,41 +1277,35 @@
       },
       "runs": [
         {
-          "rep": 1,
-          "back": "The software is provided as is and warranty 1 year.",
-          "modelLabel": "ADDED",
-          "effectiveLabel": "ADDED",
-          "src_quote": "",
-          "back_quote": "warranty 1 year",
-          "latencyA": "31.6",
-          "latencyB": "8.3"
-        },
-        {
-          "rep": 2,
-          "back": "The software is provided as is and has a 1-year warranty.",
-          "modelLabel": "DISTORTED",
-          "effectiveLabel": "DISTORTED",
+          "repetition": 1,
+          "back_translation": "The software is provided as is and 1 year warranty.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
           "src_quote": "without warranty",
-          "back_quote": "has a 1-year warranty",
-          "latencyA": "11.7",
-          "latencyB": "15.2"
+          "back_quote": "1 year warranty"
         },
         {
-          "rep": 3,
-          "back": "The software is provided as is and warranted 1 year.",
-          "modelLabel": "ADDED",
-          "effectiveLabel": "ADDED",
-          "src_quote": "",
-          "back_quote": "warranted 1 year",
-          "latencyA": "11.7",
-          "latencyB": "8.5"
+          "repetition": 2,
+          "back_translation": "The software is provided as is and a 1-year warranty.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
+          "src_quote": "without warranty",
+          "back_quote": "a 1-year warranty"
+        },
+        {
+          "repetition": 3,
+          "back_translation": "The software is provided as-is and has a 1-year warranty.",
+          "raw_label": "DISTORTED",
+          "effective_label": "DISTORTED",
+          "src_quote": "without warranty",
+          "back_quote": "has a 1-year warranty"
         }
       ],
       "anchorResult": "ANCHORS_OK",
       "labels": [
-        "ADDED",
         "DISTORTED",
-        "ADDED"
+        "DISTORTED",
+        "DISTORTED"
       ]
     }
   }

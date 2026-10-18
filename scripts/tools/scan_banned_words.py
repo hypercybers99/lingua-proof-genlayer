@@ -52,7 +52,8 @@ def scan():
     if violations:
         print(f"FAILED: Found {len(violations)} banned word violations:")
         for path, line_no, matched, text in violations:
-            print(f"  {path}:{line_no} [{matched}] -> {text[:100]}")
+            clean_text = text[:100].encode('ascii', errors='backslashreplace').decode('ascii')
+            print(f"  {path}:{line_no} [{matched}] -> {clean_text}")
         sys.exit(1)
     else:
         print("PASSED: Zero banned words detected across codebase and docs.")

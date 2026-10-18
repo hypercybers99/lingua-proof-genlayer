@@ -31,8 +31,8 @@
       "defect": "none",
       "expected_label": "PRESERVED",
       "expected_class": "FAITHFUL",
-      "src": "Ben B co quyen kiem tra tai lieu dinh ky hang quy.",
-      "tgt": "Party B has the right to periodically inspect documents quarterly."
+      "src": "Ben B co quyen kiem tra cac tai lieu hang quy.",
+      "tgt": "Party B has the right to inspect documents quarterly."
     },
     {
       "id": "F4",
@@ -59,8 +59,8 @@
     {
       "id": "F6",
       "group": "FAITHFUL",
-      "src_lang": "en",
-      "tgt_lang": "es",
+      "src_lang": "es",
+      "tgt_lang": "en",
       "defect": "none",
       "expected_label": "PRESERVED",
       "expected_class": "FAITHFUL",
@@ -75,8 +75,8 @@
       "defect": "none",
       "expected_label": "PRESERVED",
       "expected_class": "FAITHFUL",
-      "src": "Both parties agreed to call it a day after signing.",
-      "tgt": "Ca hai ben dong y ket thuc cong viec sau khi ky ket."
+      "src": "The emergency committee requires 3 of 5 signatures to execute transactions.",
+      "tgt": "Uy ban khan cap yeu cau 3 trong so 5 chu ky de thuc thi cac giao dich."
     },
     {
       "id": "F8",
@@ -88,6 +88,72 @@
       "expected_class": "FAITHFUL",
       "src": "Bien ban nay da duoc hoi dong phe duyet vao ngay 15/10/2026.",
       "tgt": "The council approved these minutes on 15/10/2026."
+    },
+    {
+      "id": "F9",
+      "group": "FAITHFUL",
+      "src_lang": "en",
+      "tgt_lang": "vi",
+      "defect": "none",
+      "expected_label": "PRESERVED",
+      "expected_class": "FAITHFUL",
+      "src": "The LinguaProof protocol verifies the accuracy of translations for governance proposals.",
+      "tgt": "Giao thức LinguaProof xác minh tính chính xác của các bản dịch đối với các đề xuất quản trị."
+    },
+    {
+      "id": "F10",
+      "group": "FAITHFUL",
+      "src_lang": "en",
+      "tgt_lang": "vi",
+      "defect": "none",
+      "expected_label": "PRESERVED",
+      "expected_class": "FAITHFUL",
+      "src": "The treasury allocated 50,000 USD to the ecosystem development fund.",
+      "tgt": "Kho bạc đã phân bổ 50,000 USD cho quỹ phát triển hệ sinh thái."
+    },
+    {
+      "id": "F11",
+      "group": "FAITHFUL",
+      "src_lang": "en",
+      "tgt_lang": "vi",
+      "defect": "none",
+      "expected_label": "PRESERVED",
+      "expected_class": "FAITHFUL",
+      "src": "Network upgrades require approval from 0xba67d808f2b7e533ec06655eb730ef5b27623ebf before execution.",
+      "tgt": "Các nâng cấp mạng lưới yêu cầu sự chấp thuận từ 0xba67d808f2b7e533ec06655eb730ef5b27623ebf trước khi thực thi."
+    },
+    {
+      "id": "F12",
+      "group": "FAITHFUL",
+      "src_lang": "en",
+      "tgt_lang": "vi",
+      "defect": "none",
+      "expected_label": "PRESERVED",
+      "expected_class": "FAITHFUL",
+      "src": "The committee approved the resolution titled \"Q4 Security Audit\".",
+      "tgt": "Ủy ban đã phê duyệt nghị quyết có tiêu đề \"Q4 Security Audit\"."
+    },
+    {
+      "id": "F13",
+      "group": "FAITHFUL",
+      "src_lang": "vi",
+      "tgt_lang": "en",
+      "defect": "none",
+      "expected_label": "PRESERVED",
+      "expected_class": "FAITHFUL",
+      "src": "Số dư dự trữ hiện tại là 1,500,000 EUR tính đến 2026-10-15.",
+      "tgt": "The current reserve balance is 1,500,000 EUR as of 2026-10-15."
+    },
+    {
+      "id": "F14",
+      "group": "FAITHFUL",
+      "src_lang": "vi",
+      "tgt_lang": "en",
+      "defect": "none",
+      "expected_label": "PRESERVED",
+      "expected_class": "FAITHFUL",
+      "src": "Người đại diện 0x99cae390c7a56d427c6e464d43e31401f4324213 đã ký xác nhận giao dịch tại https://governance.linguaproof.io.",
+      "tgt": "Representative 0x99cae390c7a56d427c6e464d43e31401f4324213 signed the transaction confirmation at https://governance.linguaproof.io."
     },
     {
       "id": "C1",

@@ -20,8 +20,7 @@
       "auditTx": "0x53ad2f1309f772bee8de3d5f0e32f8e88b1b9c10ae3c216707ff520a068735de",
       "actionTx": "0x53ad2f1309f772bee8de3d5f0e32f8e88b1b9c10ae3c216707ff520a068735de",
       "agreement": "3/5",
-      "acceptedStatus": "ACCEPTED",
-      "finalizedStatus": "FINALIZED",
+      "acceptedStatus": "Accepted by validators (3/5 agreed)",
       "outcomeClass": "FAITHFUL",
       "score": 100
     },
@@ -37,8 +36,7 @@
       "agreement": "3/5",
       "outcomeClass": "FAITHFUL",
       "score": 100,
-      "finalizedStatus": "FINALIZED",
-      "acceptedStatus": "ACCEPTED"
+      "acceptedStatus": "Accepted by validators (3/5 agreed)"
     },
     "E3": {
       "id": "E3",
@@ -52,8 +50,7 @@
       "agreement": "3/5",
       "outcomeClass": "MATERIAL_LOSS",
       "score": 50,
-      "finalizedStatus": "FINALIZED",
-      "acceptedStatus": "ACCEPTED"
+      "acceptedStatus": "Accepted by validators (3/5 agreed)"
     },
     "E4": {
       "id": "E4",
@@ -67,8 +64,7 @@
       "agreement": "3/5",
       "outcomeClass": "MATERIAL_LOSS",
       "score": 50,
-      "finalizedStatus": "FINALIZED",
-      "acceptedStatus": "ACCEPTED"
+      "acceptedStatus": "Accepted by validators (3/5 agreed)"
     },
     "E5": {
       "id": "E5",
@@ -82,8 +78,7 @@
       "agreement": "3/5",
       "outcomeClass": "CONTENT_DRIFT",
       "score": 50,
-      "finalizedStatus": "FINALIZED",
-      "acceptedStatus": "ACCEPTED"
+      "acceptedStatus": "Accepted by validators (3/5 agreed)"
     },
     "E6": {
       "id": "E6",
@@ -97,8 +92,7 @@
       "agreement": "3/5",
       "outcomeClass": "MINOR_SHIFT",
       "score": 50,
-      "finalizedStatus": "FINALIZED",
-      "acceptedStatus": "ACCEPTED"
+      "acceptedStatus": "Accepted by validators (3/5 agreed)"
     },
     "E7": {
       "id": "E7",
@@ -112,8 +106,7 @@
       "auditTx": "0x91194cd548c9c6559cc64cfefdbfd4d485558a6eaa09874eb298306e4b140b10",
       "actionTx": "0x91194cd548c9c6559cc64cfefdbfd4d485558a6eaa09874eb298306e4b140b10",
       "agreement": "3/5",
-      "acceptedStatus": "ACCEPTED",
-      "finalizedStatus": "FINALIZED",
+      "acceptedStatus": "Accepted by validators (3/5 agreed)",
       "outcomeClass": "FAITHFUL",
       "score": 100
     },
@@ -129,8 +122,7 @@
       "agreement": "3/5",
       "outcomeClass": "MATERIAL_LOSS",
       "score": 50,
-      "finalizedStatus": "FINALIZED",
-      "acceptedStatus": "ACCEPTED"
+      "acceptedStatus": "Accepted by validators (3/5 agreed)"
     },
     "E10": {
       "id": "E10",
@@ -143,8 +135,7 @@
       "auditTx": "0xbd656a2a818c2353ac17be34197e7afff0f48328269b7b926fda3f08e7f66b2f",
       "actionTx": "0xbd656a2a818c2353ac17be34197e7afff0f48328269b7b926fda3f08e7f66b2f",
       "agreement": "3/5",
-      "acceptedStatus": "ACCEPTED",
-      "finalizedStatus": "FINALIZED",
+      "acceptedStatus": "Accepted by validators (3/5 agreed)",
       "outcomeClass": "CONTENT_DRIFT",
       "score": 62
     }
@@ -154,96 +145,87 @@
       "name": "Unsupported Language",
       "method": "register_translation",
       "txHash": "0xa8813d1522198eb7dbe9de830d7cf6cc71589c9477109b47b818107f5293a371",
-      "status": "ACCEPTED",
+      "status": "Accepted by validators (5/5 agreed)",
       "consensusResult": "MAJORITY_AGREE",
       "decodedError": "unsupported language",
       "agreement": "5/5",
-      "latencySec": "7.53",
-      "finalizedStatus": "FINALIZED"
+      "latencySec": "7.53"
     },
     {
       "name": "Same Source and Target Language",
       "method": "register_translation",
       "txHash": "0xa630d53151fed760cd1e7cf487a342903239245e7c8b1f0d56687cfc9796fec6",
-      "status": "ACCEPTED",
+      "status": "Accepted by validators (5/5 agreed)",
       "consensusResult": "MAJORITY_AGREE",
       "decodedError": "source and target language must differ",
       "agreement": "5/5",
-      "latencySec": "4.02",
-      "finalizedStatus": "FINALIZED"
+      "latencySec": "4.02"
     },
     {
       "name": "Empty Pairs List",
       "method": "register_translation",
       "txHash": "0xbbea0a68c6868b9d2a4ce7cecc54a7f66545192ffcf95e64a1bdfaca592cad34",
-      "status": "ACCEPTED",
+      "status": "Accepted by validators (5/5 agreed)",
       "consensusResult": "MAJORITY_AGREE",
       "decodedError": "pairs must be a list of 1 to 12 objects",
       "agreement": "5/5",
-      "latencySec": "3.66",
-      "finalizedStatus": "FINALIZED"
+      "latencySec": "3.66"
     },
     {
       "name": "Exceeding 12 Max Pairs",
       "method": "register_translation",
       "txHash": "0x10d3d4ad44406df5071febc247c6ca151ca1137a1253a3ec2d33b1c2cdb1c645",
-      "status": "ACCEPTED",
+      "status": "Accepted by validators (5/5 agreed)",
       "consensusResult": "MAJORITY_AGREE",
       "decodedError": "pairs must be a list of 1 to 12 objects",
       "agreement": "5/5",
-      "latencySec": "4.38",
-      "finalizedStatus": "FINALIZED"
+      "latencySec": "4.38"
     },
     {
       "name": "Target Equals Source Without Anchor Exemption",
       "method": "register_translation",
       "txHash": "0xee5a4d29d9c598e378112b6c1da9765c568424949c46b14de9634a7ce36dad5a",
-      "status": "ACCEPTED",
+      "status": "Accepted by validators (4/5 agreed)",
       "consensusResult": "MAJORITY_AGREE",
       "decodedError": "target equals source",
       "agreement": "4/5",
-      "latencySec": "7.57",
-      "finalizedStatus": "FINALIZED"
+      "latencySec": "7.57"
     },
     {
       "name": "Overlength Source Segment (>400 Chars)",
       "method": "register_translation",
       "txHash": "0xabcc64e20e3a9f4ad0e3aac7e586d43c94aec3337157f7d4e9a66193455a23ec",
-      "status": "ACCEPTED",
+      "status": "Accepted by validators (3/5 agreed)",
       "consensusResult": "MAJORITY_AGREE",
       "decodedError": "source segment length out of range",
       "agreement": "3/5",
-      "latencySec": "7.25",
-      "finalizedStatus": "FINALIZED"
+      "latencySec": "7.25"
     },
     {
       "name": "Unallowed Control Character in Segment",
       "method": "register_translation",
       "txHash": "0xb9f6c6f2c6a12eaca1ad1f39b49e26892b5d0811c926e7a4d6fecc700e1cdc9c",
-      "status": "ACCEPTED",
+      "status": "Accepted by validators (3/5 agreed)",
       "consensusResult": "MAJORITY_AGREE",
       "decodedError": "segment contains control characters",
       "agreement": "3/5",
-      "latencySec": "7.20",
-      "finalizedStatus": "FINALIZED"
+      "latencySec": "7.20"
     },
     {
       "name": "Unknown Translation ID Audit",
       "method": "audit_translation",
       "txHash": "0xa99caa19f73479f1e1342fcbeca4eaeb939c98db687d08002ef4616fed2db789",
-      "status": "ACCEPTED",
+      "status": "Accepted by validators (5/5 agreed)",
       "consensusResult": "MAJORITY_AGREE",
       "decodedError": "translation not found",
       "agreement": "5/5",
-      "latencySec": "4.40",
-      "finalizedStatus": "FINALIZED"
+      "latencySec": "4.40"
     },
     {
       "name": "Audit Before Challenge",
       "method": "challenge_segment",
       "txHash": "0x8762dde119c6c9c14756abc12557e4204a1e837544a8a0532caa0e7f6f095321",
-      "status": "ACCEPTED",
-      "finalizedStatus": "ACCEPTED",
+      "status": "Accepted by validators (5/5 agreed)",
       "consensusResult": "MAJORITY_AGREE",
       "decodedError": "audit first",
       "agreement": "5/5",
@@ -253,8 +235,7 @@
       "name": "Translator Challenging Own Translation",
       "method": "challenge_segment",
       "txHash": "0x13d1cd7bf6d8d83ed9cc9ab71061eda674f039b060367e754a42c3d31bd011bc",
-      "status": "ACCEPTED",
-      "finalizedStatus": "ACCEPTED",
+      "status": "Accepted by validators (3/5 agreed)",
       "consensusResult": "MAJORITY_AGREE",
       "decodedError": "translator cannot challenge own translation",
       "agreement": "3/5",
@@ -264,8 +245,7 @@
       "name": "Non-Translator Calling Revision",
       "method": "revise_translation",
       "txHash": "0xed8ef0cf4f286fd5ecd6c922b8cea878588859fb6b7c86e3a1fdb512567a2dfe",
-      "status": "ACCEPTED",
-      "finalizedStatus": "ACCEPTED",
+      "status": "Accepted by validators (4/5 agreed)",
       "consensusResult": "MAJORITY_AGREE",
       "decodedError": "only the translator can revise",
       "agreement": "4/5",
@@ -275,19 +255,17 @@
       "name": "Duplicate Translation Registration",
       "method": "register_translation",
       "txHash": "0x6b8e0af9ddc0451ac1042d4262b31f720b8eabc945ae125ca8bc80909676121a",
-      "status": "ACCEPTED",
+      "status": "Accepted by validators (5/5 agreed)",
       "consensusResult": "MAJORITY_AGREE",
       "decodedError": "duplicate registration",
       "agreement": "5/5",
-      "latencySec": "7.58",
-      "finalizedStatus": "FINALIZED"
+      "latencySec": "7.58"
     },
     {
       "name": "Revision Identical to Parent",
       "method": "revise_translation",
       "txHash": "0xb366ef3b87e39f18c3a06a6cd3bcd98369d046222540a3ff2437408aef82e65e",
-      "status": "ACCEPTED",
-      "finalizedStatus": "ACCEPTED",
+      "status": "Accepted by validators (3/5 agreed)",
       "consensusResult": "MAJORITY_AGREE",
       "decodedError": "revision is identical to parent",
       "agreement": "3/5",
@@ -297,12 +275,11 @@
       "name": "Audit Cooldown Active (<300s)",
       "method": "audit_translation",
       "txHash": "0x96208e0d51d52789bffe463b5d8441893b8e74c068b278abc7f85e5bd5f84d5a",
-      "status": "ACCEPTED",
+      "status": "Accepted by validators (5/5 agreed)",
       "consensusResult": "MAJORITY_AGREE",
       "decodedError": "audit cooldown active",
       "agreement": "5/5",
-      "latencySec": "7.16",
-      "finalizedStatus": "FINALIZED"
+      "latencySec": "7.16"
     }
   ],
   "readbacks": {

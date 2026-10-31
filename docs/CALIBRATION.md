@@ -90,10 +90,48 @@ Across **42 faithful control trials** (14 items $\times$ 3 independent repetitio
 | **F13** | vi → en | Emergency multisig threshold | `4/7`, `0xba67d808f2b7E533ec06655eB730Ef5B27623EBF` | PRESERVED (3) | 100% |
 | **F14** | vi → en | Legal dispute jurisdiction | `2026-12-31` | PRESERVED (3) | 100% |
 
-### Calibration Summary Metrics
+### Calibration Summary Metrics & Target Assessment
 
-- **Control Items Meeting 100% Stability**: 12 of 14 controls (85.7%).
-- **Total Control Trials Evaluated**: 42 trials.
-- **Total PRESERVED Verdicts**: 40 of 42 (95.2%).
-- **Observed False Positive Rate Across Trials**: 2 of 42 (4.8%), well below the required $\le 12.5\%$ threshold.
-- **Corrupted Items Detection (Recall)**: 15 of 15 corrupted items detected with zero false negatives across all deterministic and model fault classes (`ANCHOR_ALTERED`, `DISTORTED`, `OMITTED`, `ADDED`).
+| Metric | Measured Result | Target Requirement | Target Status |
+| :--- | :---: | :---: | :---: |
+| **Per-Trial Preservation Rate** | **40 of 42 trials PRESERVED** (95.2%) | $\ge 87.5\%$ ($\le 12.5\%$ false positive trials) | **MET** (4.76% trial false positives) |
+| **Per-Control Stability** | **12 of 14 controls stable** (85.7%) | $\ge 13$ of 14 controls ($\le 1$ unstable control) | **NOT MET** (2 unstable controls: F8, F10) |
+| **Corrupted Items Recall** | **15 of 15 corrupted items detected** (100%) | $100\%$ detection of defect classes | **MET** (zero false negatives) |
+
+> [!WARNING]
+> **Per-Control Target Not Met**: The initial calibration target of false-positive rate $\le 1$ of 14 controls was **NOT MET**. Across 3 repetitions per control, 2 of 14 controls (F8 and F10) produced a false-positive `SHIFTED` verdict in one of their three trials (14.29% control failure rate). While the per-trial false-positive rate (2 of 42 = 4.76%) is well below 12.5%, the per-control stability target was missed due to model sensitivity to voice and aspect variations.
+
+---
+
+## 5. Detailed Analysis of Unstable Controls (F8 & F10)
+
+### Control F8: Passive-to-Active Voice Alteration (vi → en)
+- **Source Segment**: `"Bien ban nay da duoc hoi dong phe duyet vao ngay 15/10/2026."`
+- **Target Segment**: `"The council approved these minutes on 15/10/2026."`
+- **Repetition 1 Outcome**: `SHIFTED` (Severity 1). Repetitions 2 & 3: `PRESERVED`.
+- **Back-Translation**: `"Hội đồng đã phê duyệt biên bản này vào ngày 15/10/2026."`
+- **Flagged Quotes**:
+  - Source Quote: `"Bien ban nay da duoc hoi dong phe duyet vao ngay 15/10/2026"`
+  - Back-Translation Quote: `"Hội đồng đã phê duyệt biên bản này vào ngày 15/10/2026"`
+- **Why the Model Diverged**: The source sentence was written in Vietnamese passive voice without diacritics (*"Biên bản này đã được hội đồng phê duyệt..."* - topic-prominent focus on the minutes). The target English sentence used natural active voice (*"The council approved..."*), which the back-translation faithfully rendered in Vietnamese active voice (*"Hội đồng đã phê duyệt biên bản này..."*). When comparing source to back-translation in Step B, the validator model detected the difference in syntactic voice and topic structure, classifying it as a semantic register shift (`SHIFTED`).
+
+### Control F10: Tense/Aspect & Capitalization Divergence (en → vi)
+- **Source Segment**: `"The treasury allocated 50,000 USD to the ecosystem development fund."`
+- **Target Segment**: `"Kho bạc đã phân bổ 50,000 USD cho quỹ phát triển hệ sinh thái."`
+- **Repetition 3 Outcome**: `SHIFTED` (Severity 1). Repetitions 1 & 2: `PRESERVED`.
+- **Back-Translation**: `"The Treasury has allocated 50,000 USD to the ecosystem development fund."`
+- **Flagged Quotes**:
+  - Source Quote: `"The treasury allocated"`
+  - Back-Translation Quote: `"The Treasury has allocated"`
+- **Why the Model Diverged**: The Vietnamese past-tense marker *"đã"* was back-translated as present perfect (*"has allocated"*) rather than simple past (*"allocated"*), alongside capitalization of *"Treasury"*. The validator model interpreted this aspectual shift from completed historical past to present-relevant completion as a subtle meaning shift (`SHIFTED`).
+
+---
+
+## 6. Practical Implications for LinguaProof Users
+
+What does this mean for a user or integrator of LinguaProof?
+1. **Probabilistic Fidelity Signal, Not Mathematical Proof**: An on-chain audit score from LinguaProof reflects the consensus judgment of an LLM validator committee on GenLayer Studionet (Preview). It is an automated fidelity notary signal, not an absolute guarantee of linguistic perfection.
+2. **False Positives on Subtle Voice/Aspect Shifts**: As shown by F8 and F10, highly faithful translations that naturally shift grammatical voice (e.g. passive in Vietnamese to active in English) or verbal aspect may occasionally receive a `MINOR_SHIFT` (score 50–90) rather than `FAITHFUL` (100).
+3. **Built-in Recourse Architecture**: The LinguaProof contract design explicitly anticipates model variance through two core mechanisms:
+   - **Segment Challenges (`challenge_segment`)**: Any participant can dispute an audit finding on a specific segment by providing a reasoned rebuttal. If upheld, the challenge overlays the translation's effective score view.
+   - **Transparent Revisions (`revise_translation`)**: Translators can adjust phrasing to eliminate stylistic ambiguity and re-audit under a linked parent-child lineage, maintaining an immutable history of improvements.
